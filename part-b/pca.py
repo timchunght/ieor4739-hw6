@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def import_file_as_Q(file_path):
+def import_Q_from_file(file_path):
 	input_file = open(file_path, 'r')
 	# first line is number of assets
 	asset_size =  int(input_file.readline().split()[1])
@@ -15,6 +15,6 @@ def import_file_as_Q(file_path):
 			for k in range(asset):
 				Q[j,k] = float(current_line[j])
 
+	input_file.close()
 	return Q
 
-	
