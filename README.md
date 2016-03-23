@@ -4,6 +4,30 @@ Due March 28, 2016
 
 *(a) Extend the principal components code we developed in class so as to compute the top ten eigenvalues and corresponding eigenvectors. Run it on the Russell-1000 covariance matrix (computed using qas many days as you have). 
 
+From the same directory as this README, run:
+```
+sh part-a/run.sh
+```
+
+Results:
+
+```
+ ID 0 eigenvalue 0  0.0830665!
+ ID 0 eigenvalue 1  0.0217736!
+ ID 0 eigenvalue 2  0.0189869!
+ ID 0 eigenvalue 3  0.018119!
+ ID 0 eigenvalue 4  0.00789368!
+ ID 0 eigenvalue 5  0.00628493!
+ ID 0 eigenvalue 6  0.00431367!
+ ID 0 eigenvalue 7  0.00379324!
+ ID 0 eigenvalue 8  0.00371779!
+ ID 0 eigenvalue 9  0.00312863!
+
+real	0m6.162s
+user	0m5.846s
+sys	0m0.113s
+```
+
 *(b)Compare your code from (a) with the best numpy implementation you can find. Do they agree (i.e. are the eigenvalues and eigenvectors about the same)? Which one is faster? Note that numpy comes with several operators already. 
 
 *(c) Take a portfolio allocation (percentages) you computed for the Russell-1000 using the porfolio optimization algorithm you developed. Convert them into stock quantities as per the first day prices, using a total of one billion dollars for the initial portfolio value. This exercise asks you to run the P & L analysis for the resulting portfolio, without any rebalancing (so the quantities you have on day 1 are the quantities you will have at the end). You will run a number of simulations of this analysis, using random perturbations of the prices. On each run you will report the final portfolio value, and the average daily portfolio return. This program should be in C.
