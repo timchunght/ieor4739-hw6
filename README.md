@@ -46,3 +46,5 @@ The random perturbations are constructed as follows. Consider an asset k. Suppos
 
 Do this on at least one million samples. Feel free to use a multithreaded setup if you have a multicore machine. 
 Note: you may use the "Box-Muller" transform to draw normally distributed values. 
+
+
