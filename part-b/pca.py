@@ -14,12 +14,17 @@ def import_Q_from_file(file_path):
 		while len(current_line) == 0 or current_line[1] == "matrix":
 			current_line = input_file.readline()	
 			current_line = current_line.split()
-		print current_line
+		# print current_line
 		for k in range(asset_size):
 			Q[j,k] = float(current_line[j])
 
 	input_file.close()
 	return Q
 
+def compute_eigen(Q):
+	start_time = time.time()
+	eigen_value, eigen_vector = np.linalg.eig(Q)
+	time_taken = time.time() - start_time 
+	print "time taken: " + str(time_taken)
 
-import_Q_from_file("/Users/timothychung/Documents/workspace/IEOR/hw4/part-a/rpower/data/russell-1000-Q.dat")
+compute_eigen(import_Q_from_file("/Users/timothychung/Documents/workspace/IEOR/hw4/part-a/rpower/data/russell-1000-Q.dat"))

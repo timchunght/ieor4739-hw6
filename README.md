@@ -12,20 +12,20 @@ sh part-a/run.sh
 Results:
 
 ```
- ID 0 eigenvalue 0  0.0830665!
- ID 0 eigenvalue 1  0.0217736!
- ID 0 eigenvalue 2  0.0189869!
- ID 0 eigenvalue 3  0.018119!
- ID 0 eigenvalue 4  0.00789368!
- ID 0 eigenvalue 5  0.00628493!
- ID 0 eigenvalue 6  0.00431367!
- ID 0 eigenvalue 7  0.00379324!
- ID 0 eigenvalue 8  0.00371779!
- ID 0 eigenvalue 9  0.00312863!
+ID 0 eigenvalue 0  0.0832175!
+ID 0 eigenvalue 1  0.0217713!
+ID 0 eigenvalue 2  0.018991!
+ID 0 eigenvalue 3  0.0181188!
+ID 0 eigenvalue 4  0.00789802!
+ID 0 eigenvalue 5  0.00628969!
+ID 0 eigenvalue 6  0.00431537!
+ID 0 eigenvalue 7  0.00379329!
+ID 0 eigenvalue 8  0.00371618!
+ID 0 eigenvalue 9  0.00312891!
 
-real	0m6.162s
-user	0m5.846s
-sys	0m0.113s
+real	0m6.138s
+user	0m5.923s
+sys	  0m0.110s
 ```
 
 *(b)Compare your code from (a) with the best numpy implementation you can find. Do they agree (i.e. are the eigenvalues and eigenvectors about the same)? Which one is faster? Note that numpy comes with several operators already. 
