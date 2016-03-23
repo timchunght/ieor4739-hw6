@@ -27,4 +27,4 @@ def compute_eigen(Q):
 	time_taken = time.time() - start_time 
 	print "time taken: " + str(time_taken)
 
-compute_eigen(import_Q_from_file("/Users/timothychung/Documents/workspace/IEOR/hw4/part-a/rpower/data/russell-1000-Q.dat"))
+compute_eigen(import_Q_from_file("part-a/rpower/data/russell-1000-Q.dat"))
