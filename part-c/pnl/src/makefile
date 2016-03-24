@@ -1,21 +1,12 @@
+CCC = gcc -O2 -funroll-loops
+CCCFLAGS = # -Wno-unused-variable -Wno-unused-but-set-variable -Wno-unused-label
 
+OBJ = utilities.o pnl.o
 
-CC  = gcc
-CXX = g++
-
-CFLAGS   = -g -Wall $(INCLUDES)
-CXXFLAGS = -g -Wall $(INCLUDES)
-
-
-default: pnl
-
-pnl: pnl.o
-
-pnl.o: utilities.o
-
-utilities.o: utilities.c
+pnl: $(OBJ)
+	$(CCC) $(CCCFLAGS) -o pnl $(OBJ) $(CCCLNFLAGS)
 
 clean:
 	rm -f *.o *~ a.out core utilities pnl
 
-all: clean default
+	

@@ -42,4 +42,16 @@ double drawnormal(void)
   return drawn;
 }
 
+void PrintVector(int n, double *vector)
+{
+  int j;
+
+  for (j = 0; j < n; j++){
+    printf(" %g", vector[j]);
+  }
+  printf("\n");
+}
+
+
+
 

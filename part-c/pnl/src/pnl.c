@@ -6,7 +6,6 @@
 #include "utilities.h"
 
 int import_positions(char* filename, double **px, int* num_of_asset, int** indices_pointer, double max);
-void PrintVector(int n, double *vector);
 
 int main(int argc, char *argv[])
 { 
@@ -23,6 +22,8 @@ int main(int argc, char *argv[])
   }
   printf("x: %g\n", *x);
   PrintVector(num_of_asset, x);
+
+  
 }
 
 
@@ -74,18 +75,6 @@ int import_positions(char* filename, double **px, int* num_of_asset, int** indic
   return 0;
 }
 
-
-
-
-void PrintVector(int n, double *vector)
-{
-  int j;
-
-  for (j = 0; j < n; j++){
-    printf(" %g", vector[j]);
-  }
-  printf("\n");
-}
 
 
 
