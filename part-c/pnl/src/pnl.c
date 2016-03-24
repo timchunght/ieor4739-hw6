@@ -5,6 +5,7 @@
 #include <math.h>
 #include "utilities.h"
 #include "pnl.h"
+#include "helpers.h"
 
 
 int main(int argc, char *argv[])
