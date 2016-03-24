@@ -28,7 +28,13 @@ int main(int argc, char *argv[])
   printf("x: %g\n", *x);
   printVector(num_of_asset, x);
   code = load_prices(prices_filename, &prices, num_of_asset, indices, &t, max_period);
-  
+  if(code != 0) {
+    return code;
+  }
+
+  // calculate array of averages of changes
+  // calculate array of standard deviation of changes
+
 }
 
 
