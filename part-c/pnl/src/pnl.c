@@ -64,6 +64,11 @@ int main(int argc, char *argv[])
     code = run_simulation(z, num_of_assets, t, prices, quantities, deltas, sigmas, &portfo_values, &portfo_returns);
   }
 
+  double avg_value = get_average(runs_count, portfo_values);
+  double avg_return = get_average(runs_count, portfo_returns);
+
+  printf("Average value: %g\n", avg_value);
+  printf("Average return: %g\n", avg_return);
 }
 
 int run_simulation(int run_idx, int num_of_assets, int t, double *prices, double *quantities, double *deltas, double *sigmas, double **portfo_values, double **portfo_returns) {
