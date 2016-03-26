@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 { 
 
-  int num_of_asset;
+  int num_of_assets;
   char *positions_filename = "./positions.txt";
   char *prices_filename = "./prices.txt";
   double max = 1e-10;
@@ -20,25 +20,33 @@ int main(int argc, char *argv[])
   int t;
   int max_period = 10000;
   double *prices = NULL;
+  double budget = 1e-10;
+  double *deltas = NULL;
+
   printf("hello world\n");
-  int code = import_positions(positions_filename, &x, &num_of_asset, &indices, max);
+  int code = import_positions(positions_filename, &x, &num_of_assets, &indices, max);
   if(code != 0) {
     return code;
   }
   printf("x: %g\n", *x);
-  printVector(num_of_asset, x);
-  code = load_prices(prices_filename, &prices, num_of_asset, indices, &t, max_period);
+  printVector(num_of_assets, x);
+  code = import_prices(prices_filename, &prices, num_of_assets, indices, &t, max_period);
   if(code != 0) {
     return code;
   }
 
-  // calculate array of averages of changes
+  
+  calculate_average_deltas(prices, num_of_assets, t, &deltas);
+  printf("deltas:\n");
+  printVector(num_of_assets, deltas);
+  // calculate array of averages of changes; array of Mu [Mui1, Mui2...]
   // calculate array of standard deviation of changes
+
+
+  
+
 
 }
 
-
-
-// int import_prices
 
 

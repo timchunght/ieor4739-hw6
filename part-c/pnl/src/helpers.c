@@ -67,7 +67,7 @@ int import_positions(char* filename, double **px, int* num_of_asset, int** indic
 }
 
 
-int load_prices(char* filename, double **prices_pointer, int n, int *indices, int *time_pointer, int max_period) {
+int import_prices(char* filename, double **prices_pointer, int n, int *indices, int *time_pointer, int max_period) {
   
   FILE *f;
   char b[100];
@@ -136,6 +136,26 @@ void printVector(int n, double *vector)
 }
 
 
+
+
+int calculate_average_deltas(double *p, int n, int t, double **delta_pointer) {
+  double change;
+  double *delta = NULL;
+
+  delta = (double *) calloc(n, sizeof(double));
+  for (int i = 0; i < n; i++) {
+    delta[i] = 0;
+    for (int k = 0; k < (t - 1); k++) {
+      change = (p[i * t + k + 1] - p[i * t + k]); /** / p[i * t + k]; (for returns)**/
+      delta[i] += change;
+    }
+    delta[i] /= (t - 1);
+  }
+
+  *delta_pointer = delta;
+
+  return 0;
+}
 
 
 
