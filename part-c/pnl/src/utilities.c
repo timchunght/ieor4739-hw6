@@ -42,3 +42,15 @@ double drawnormal(void)
   return drawn;
 }
 
+double drawnormal_r(unsigned int *prseed) {
+  double U1, U2, drawn, pi;
+
+  pi = 3.141592653589793;
+
+  U1 = (rand_r(prseed)+1)/((double)((unsigned int)RAND_MAX+1)); /** we don't want a value of 0 otherwise drawn = +oo **/
+  U2 = (rand_r(prseed)+1)/((double)((unsigned int)RAND_MAX+1));
+
+  drawn = sqrt(-2*log(U1))*cos(2*pi*U2); 
+  
+  return drawn;
+}
