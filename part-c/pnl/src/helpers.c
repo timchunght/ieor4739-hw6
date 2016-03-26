@@ -158,5 +158,23 @@ int calculate_average_deltas(double *p, int n, int t, double **delta_pointer) {
 }
 
 
+int calculate_sigmas(double *prices, int num_of_assets, int t, double *deltas, double **sigmas_pointer) {
+  double change;
+  double *sigmas = NULL;
 
+  sigmas = (double *) calloc(num_of_assets, sizeof(double));
+  
+  for (int i = 0; i < num_of_assets; i++) {
+    sigmas[i] = 0;
+    for (int k = 0; k < t - 1; k++) {
+      change = (prices[i * t + k + 1] - prices[i * t + k]);
+      sigmas[i] += (change - deltas[i]) * (change - deltas[i]);
+    }
+    sigmas[i] = sigmas[i]/(t - 1); 
+    sigmas[i] = sqrt(sigmas[i]);
+  }
 
+  *sigmas_pointer = sigmas;
+  
+  return 0;
+}

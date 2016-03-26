@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
   double *prices = NULL;
   double budget = 1e-10;
   double *deltas = NULL;
+  double *sigmas = NULL;
 
   printf("hello world\n");
   int code = import_positions(positions_filename, &x, &num_of_assets, &indices, max);
@@ -36,12 +37,17 @@ int main(int argc, char *argv[])
   }
 
   
+  // calculate array of averages of changes; array of Mu [Mui1, Mui2...]
   calculate_average_deltas(prices, num_of_assets, t, &deltas);
   printf("deltas:\n");
   printVector(num_of_assets, deltas);
-  // calculate array of averages of changes; array of Mu [Mui1, Mui2...]
-  // calculate array of standard deviation of changes
 
+  // calculate array of standard deviation of changes
+  calculate_sigmas(prices, num_of_assets, t, deltas, &sigmas);
+  printf("sigmas:\n");
+  printVector(num_of_assets, sigmas);
+
+  
 
   
 
