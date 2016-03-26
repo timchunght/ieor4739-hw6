@@ -178,3 +178,13 @@ int calculate_sigmas(double *prices, int num_of_assets, int t, double *deltas, d
   
   return 0;
 }
+
+void calculate_quantities(int num_of_assets, int t, double budget, double *positions, double *prices, double **quantities_pointer) {
+  double *quantities = (double *) calloc(num_of_assets, sizeof(double));
+  
+  for (int i = 0; i < num_of_assets; i++) {
+    quantities[i] = positions[i] * (budget/ prices[i*t + 0]);
+  }
+
+  *quantities_pointer = quantities;
+}
