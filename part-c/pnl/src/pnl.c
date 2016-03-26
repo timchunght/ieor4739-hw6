@@ -28,13 +28,11 @@ int main(int argc, char *argv[])
   double *portfo_values = (double*)calloc(runs_count, sizeof(double));
   double *portfo_returns = (double*)calloc(runs_count, sizeof(double));
   
-
-  printf("hello world\n");
   int code = import_positions(positions_filename, &x, &num_of_assets, &indices, max);
   if(code != 0) {
     return code;
   }
-  printf("x: %g\n", *x);
+  printf("positions:\n");
   printVector(num_of_assets, x);
   code = import_prices(prices_filename, &prices, num_of_assets, indices, &t, max_period);
   if(code != 0) {
@@ -62,47 +60,43 @@ int main(int argc, char *argv[])
   printVector(num_of_assets, quantities);
 
 
+  for(int z = 0; z < runs_count; z++) {
+    code = run_simulation(z, num_of_assets, t, prices, quantities, deltas, sigmas, &portfo_values, &portfo_returns);
+  }
+
 }
 
-// int run_simulation(unsigned int *prseed, int num_of_assets, int t, double *prices, double *deltas, double *sigmas);
-// int run_simulation(unsigned int *prseed, int num_of_assets, int t, double *prices, double *deltas, double *sigmas) {
-//   // int n, t;
-//   int n = num_of_assets;
-//   double *p = prices
-//   double *deltas = deltas;
-//   double *sigmas = sigmas;
-//   // double *p, *q, *deltas, *sigmas;
-//   double portfo_value;
-//   double portfo_value_temp; 
-//   double portfo_return;
+int run_simulation(int run_idx, int num_of_assets, int t, double *prices, double *quantities, double *deltas, double *sigmas, double **portfo_values, double **portfo_returns) {
 
-//   // n = pf->n;
-//   // t = pf->t;
-//   // p = pf->p;
-//   // q = pf->q;
-//   // deltas = pf->delta;
-//   // sigmas = pf->sigma;
+  int n = num_of_assets;
+  double *p = prices;
+  double *q = quantities;
+  double portfo_value;
+  double portfo_value_temp; 
+  double portfo_return;
+  unsigned int rseed = run_idx;
 
-//   portfo_return = 0.0;
-//   for (int j = 0; j < t; j++) {
-//     portfo_value = 0.0;
-//     for (int i = 0; i < n; i++) {
-//       /**pf_v += p[i*t + j] * q[i];**/ /** no perturbations **/
-//       portfo_value += (p[i*t + j] + (sigmas[i]*drawnormal_r(prseed) + delta[i])) * q[i];
-//     }
-//     if (j > 0) {
-//       portfo_return += (portfo_value - portfo_value_temp) / portfo_value_temp;
-//     }
-//     portfo_value_temp = portfo_value;
-//   }
+  portfo_return = 0.0;
+  for (int j = 0; j < t; j++) {
+    portfo_value = 0.0;
+    for (int i = 0; i < n; i++) {
+      /**pf_v += p[i*t + j] * q[i];**/ /** no perturbations **/
+      portfo_value += (p[i*t + j] + (sigmas[i]*drawnormal_r(&rseed) + deltas[i])) * q[i];
+    }
+    if (j > 0) {
+      portfo_return += (portfo_value - portfo_value_temp) / portfo_value_temp;
+    }
+    portfo_value_temp = portfo_value;
+  }
 
-//   portfo_return = portfo_return/(t - 1);
+  portfo_return = portfo_return/(t - 1);
 
-//   /** save results in an external array **/
-//   // pf->pf_values[sim] = pf_v;
-//   // pf->portfo_returns[sim] = portfo_return;
-
-//   return 0;
-// }
+  (*portfo_returns)[run_idx] = portfo_return;
+  (*portfo_values)[run_idx] = portfo_value;
+  printf("run %d: portfolio value: %g\n", run_idx, (*portfo_values)[run_idx]);
+  printf("run %d: portfolio return: %g\n", run_idx, (*portfo_returns)[run_idx]);
+  
+  return 0;
+}
 
 
