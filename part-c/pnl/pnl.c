@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
   int *indices = NULL;
   int t;
   int max_period = 10000;
-  int runs_count = 100;
+  int runs_count = 1000000;
   double *prices = NULL;
   double budget = 1e10;
   double *deltas = NULL;
@@ -69,6 +69,9 @@ int main(int argc, char *argv[])
 
   printf("Average value: %g\n", avg_value);
   printf("Average return: %g\n", avg_return);
+
+  free(portfo_values);
+  free(portfo_returns);
 }
 
 int run_simulation(int run_idx, int num_of_assets, int t, double *prices, double *quantities, double *deltas, double *sigmas, double **portfo_values, double **portfo_returns) {

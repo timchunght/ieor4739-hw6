@@ -48,10 +48,23 @@ The random perturbations are constructed as follows. Consider an asset k. Suppos
 Do this on at least one million samples. Feel free to use a multithreaded setup if you have a multicore machine. 
 Note: you may use the "Box-Muller" transform to draw normally distributed values. 
 
+#### Instructions:
+
 ```
 cd part-c/pnl
 make
 ./pnl
 ```
-It will run 1million simulations and print out each of the run id, portfolio value, and porfolio return. Lastly, it will calculate the avg_value and avg_return.
 
+It will run 1 million simulations and print out each of the run id, portfolio value, and porfolio return. Lastly, it will calculate the avg_value and avg_return.
+
+#### Output:
+
+```
+<!-- lines omitted -->
+run 999998: portfolio return: 0.000457346
+run 999999: portfolio value: 1.24834e+10
+run 999999: portfolio return: 0.000449826
+Average value: 1.25358e+10
+Average return: 0.000465522
+```

@@ -62,7 +62,7 @@ int import_positions(char* filename, double **px, int* num_of_asset, int** indic
   *indices_pointer = indices;
   *num_of_asset = non_size_asset_count;
   *px = x;
-
+  free(x);
   return 0;
 }
 
@@ -121,7 +121,7 @@ int import_prices(char* filename, double **prices_pointer, int n, int *indices, 
   *time_pointer = t;
 
   *prices_pointer = p;
-
+  free(p);
   return 0;
 }
 
@@ -138,22 +138,22 @@ void printVector(int n, double *vector)
 
 
 
-int calculate_average_deltas(double *p, int n, int t, double **delta_pointer) {
+int calculate_average_deltas(double *prices, int num_of_assets, int t, double **delta_pointer) {
   double change;
-  double *delta = NULL;
+  double *deltas = NULL;
 
-  delta = (double *) calloc(n, sizeof(double));
-  for (int i = 0; i < n; i++) {
-    delta[i] = 0;
+  deltas = (double *) calloc(num_of_assets, sizeof(double));
+  for (int i = 0; i < num_of_assets; i++) {
+    deltas[i] = 0;
     for (int k = 0; k < (t - 1); k++) {
-      change = (p[i * t + k + 1] - p[i * t + k]); /** / p[i * t + k]; (for returns)**/
-      delta[i] += change;
+      change = (prices[i * t + k + 1] - prices[i * t + k]);
+      deltas[i] += change;
     }
-    delta[i] /= (t - 1);
+    deltas[i] = deltas[i]/(t - 1);
   }
 
-  *delta_pointer = delta;
-
+  *delta_pointer = deltas;
+  // free(deltas);
   return 0;
 }
 
@@ -175,7 +175,7 @@ int calculate_sigmas(double *prices, int num_of_assets, int t, double *deltas, d
   }
 
   *sigmas_pointer = sigmas;
-  
+  free(sigmas);
   return 0;
 }
 
@@ -187,4 +187,5 @@ void calculate_quantities(int num_of_assets, int t, double budget, double *posit
   }
 
   *quantities_pointer = quantities;
+  free(quantities);
 }
