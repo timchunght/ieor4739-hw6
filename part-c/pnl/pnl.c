@@ -88,7 +88,6 @@ int run_simulation(int run_idx, int num_of_assets, int t, double *prices, double
   for (int j = 0; j < t; j++) {
     portfo_value = 0.0;
     for (int i = 0; i < n; i++) {
-      /**pf_v += p[i*t + j] * q[i];**/ /** no perturbations **/
       portfo_value += (p[i*t + j] + (sigmas[i]*drawnormal_r(&rseed) + deltas[i])) * q[i];
     }
     if (j > 0) {
