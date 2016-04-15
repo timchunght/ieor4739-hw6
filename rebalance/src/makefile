@@ -31,11 +31,18 @@ CCCFLAGS = -I$(LPINCDIR)
 	@echo compiling $*.c with $(CCC) $(CCCFLAGS)
 	@$(CCC) $(CCCFLAGS) -c $< -o $@
 
+FACTORS = ../bin/genmain.o ../bin/genengine.o
 
-REBALANCE = ../bin/rebmain.o ../bin/rebengine.o
+factors: $(FACTORS)
+	$(CCC) $(CCCFLAGS) -o ../bin/factors $(FACTORS) $(CCCLNFLAGS)
 
-rebalance: $(REBALANCE)
-	$(CCC) $(CCCFLAGS) -o ../bin/rebalance $(REBALANCE) $(CCCLNFLAGS)
+
+ROB = ../bin/robustmain.o ../bin/robust.o
+
+rob: $(ROB)
+	$(CCC) $(CCCFLAGS) -o ../bin/rob $(ROB) $(CCCLNFLAGS)
+
+
 
 
 clean:

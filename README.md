@@ -4,7 +4,13 @@ In this homework set you will extend the P& L computation in HW4 as follows:
 
 (a) Compute a portfolio using robust portfolio optimization (you can use my code -- but you need to choose gamma and Gamma). Alternatively, use the chance-constrained version. In either case, make sure to choose a large enough lambda, through trial and error, so that your portfolio has many names.
 
+Create new input for pnl using rob
+
+Arbitrary: 1, 0.2, 0.4
+
 (b) Compute a portfolio using robust portfolio optimization (you can use Now run the P&L simulation using rebalancing every three months -- any gains or costs are reinvested into the portfolio so as to keep the same "x" positions, as explained in class. You need to output the average (over the simulations) of the mean daily portfolio return and daily variance of return. 
+
+Add rebalancing every 90 days
 
 
 #### Instructions:
