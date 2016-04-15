@@ -7,15 +7,15 @@
 
 
 double get_average(int n, double *arr) {
-	int i;
-	double total;
+  int i;
+  double total;
 
-	total = 0.0;
-	for (i = 0; i < n; i++) {
-		total += arr[i];
-	}
+  total = 0.0;
+  for (i = 0; i < n; i++) {
+    total += arr[i];
+  }
 
-	return total/n;
+  return total/n;
 }
 
 int import_positions(char* filename, double **px, int* num_of_asset, int** indices_pointer, double max) {

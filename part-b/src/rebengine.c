@@ -148,9 +148,13 @@ int RBengine(int numassets, double *targetx, double *prices, double *shares)
 
   GRBfreemodel(model);
 
+
+
  BACK:  
   return retcode;
 }
+
+
 
 
   

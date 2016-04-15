@@ -6,7 +6,7 @@
 #include "utilities.h"
 #include "pnl.h"
 #include "helpers.h"
-
+#include "rebengine.h"
 
 int main(int argc, char *argv[])
 { 
@@ -27,11 +27,14 @@ int main(int argc, char *argv[])
   double *quantities = NULL;
   double *portfo_values = (double*)calloc(runs_count, sizeof(double));
   double *portfo_returns = (double*)calloc(runs_count, sizeof(double));
-  
+ 
   int code = import_positions(positions_filename, &x, &num_of_assets, &indices, max);
   if(code != 0) {
     return code;
   }
+
+  double *current_prices = (double*)calloc(num_of_assets, sizeof(double));
+
   printf("positions:\n");
   printVector(num_of_assets, x);
   code = import_prices(prices_filename, &prices, num_of_assets, indices, &t, max_period);
@@ -52,16 +55,31 @@ int main(int argc, char *argv[])
   calculate_sigmas(prices, num_of_assets, t, deltas, &sigmas);
   printf("sigmas:\n");
   printVector(num_of_assets, sigmas);
-
-
+ 
   // calculate quantities
   calculate_quantities(num_of_assets, t, budget, x, prices, &quantities);
   printf("quantities:\n");
   printVector(num_of_assets, quantities);
 
+  printf("right before sigmas:\n");
+  printVector(num_of_assets, sigmas);
 
+  double *quantities_clone = calloc(num_of_assets, sizeof(double));
+
+  for(int i = 0; i < num_of_assets; i++) {
+
+    quantities_clone[i] = quantities[i];
+  }
+  
   for(int z = 0; z < runs_count; z++) {
-    code = run_simulation(z, num_of_assets, t, prices, quantities, deltas, sigmas, &portfo_values, &portfo_returns);
+
+    for(int i = 0; i < num_of_assets; i++) {
+
+      quantities[i] = quantities_clone[i];
+    }
+
+
+    code = run_simulation(z, num_of_assets, t, prices, quantities, deltas, sigmas, &portfo_values, &portfo_returns, current_prices, x);
   }
 
   double avg_value = get_average(runs_count, portfo_values);
@@ -74,7 +92,7 @@ int main(int argc, char *argv[])
   free(portfo_returns);
 }
 
-int run_simulation(int run_idx, int num_of_assets, int t, double *prices, double *quantities, double *deltas, double *sigmas, double **portfo_values, double **portfo_returns) {
+int run_simulation(int run_idx, int num_of_assets, int t, double *prices, double *quantities, double *deltas, double *sigmas, double **portfo_values, double **portfo_returns, double *current_prices, double *initial_positions) {
 
   int n = num_of_assets;
   double *p = prices;
@@ -83,12 +101,30 @@ int run_simulation(int run_idx, int num_of_assets, int t, double *prices, double
   double portfo_value_temp; 
   double portfo_return;
   unsigned int rseed = run_idx;
-
+  
   portfo_return = 0.0;
+
   for (int j = 0; j < t; j++) {
+
+    for (int i = 0; i < n; i++) {
+
+      current_prices[i] = (p[i*t + j] + (sigmas[i]*drawnormal_r(&rseed) + deltas[i]));
+      // printf("current_prices[%d] %g\n", i, current_prices[i]);
+      // printf("p %g\n", p[i*t + j]);
+      // printf("deltas %g\n", deltas[i]);
+    
+      // printf("sigmas %g\n", sigmas[i]);
+
+    }
+    // if it gets to a period of 90
+    if(j%90 == 0 && j > 0) {
+      RBengine(n, initial_positions, current_prices, q);
+
+    }
+    
     portfo_value = 0.0;
     for (int i = 0; i < n; i++) {
-      portfo_value += (p[i*t + j] + (sigmas[i]*drawnormal_r(&rseed) + deltas[i])) * q[i];
+      portfo_value += current_prices[i] * q[i];
     }
     if (j > 0) {
       portfo_return += (portfo_value - portfo_value_temp) / portfo_value_temp;

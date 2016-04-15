@@ -6,15 +6,8 @@ gccopt= gcc -O2 -funroll-loops
 gccdeb= gcc -ggdb -Wall -pedantic
 CCC = $(gccdeb)
 
-OS := $(shell uname)
-ifeq ($(OS),Darwin)
-  # Run MacOS commands
-  GRB = /Library/gurobi651/mac64
-else
-	GRB = /opt/gurobi/gurobi650/linux64
-  # check for Linux and run other commands
-endif
 
+GRB = /Library/gurobi651/mac64
 
 #include
 LPINCDIR = $(GRB)/include
@@ -31,18 +24,11 @@ CCCFLAGS = -I$(LPINCDIR)
 	@echo compiling $*.c with $(CCC) $(CCCFLAGS)
 	@$(CCC) $(CCCFLAGS) -c $< -o $@
 
-FACTORS = ../bin/genmain.o ../bin/genengine.o
 
-factors: $(FACTORS)
-	$(CCC) $(CCCFLAGS) -o ../bin/factors $(FACTORS) $(CCCLNFLAGS)
+REBALANCE = ../bin/rebmain.o ../bin/rebengine.o
 
-
-ROB = ../bin/robustmain.o ../bin/robust.o
-
-rob: $(ROB)
-	$(CCC) $(CCCFLAGS) -o ../bin/rob $(ROB) $(CCCLNFLAGS)
-
-
+rebalance: $(REBALANCE)
+	$(CCC) $(CCCFLAGS) -o ../bin/rebalance $(REBALANCE) $(CCCLNFLAGS)
 
 
 clean:
