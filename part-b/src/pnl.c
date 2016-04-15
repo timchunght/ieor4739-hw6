@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
   int *indices = NULL;
   int t;
   int max_period = 10000;
-  int runs_count = 1000000;
+  int runs_count = 10;
   double *prices = NULL;
   double budget = 1e10;
   double *deltas = NULL;

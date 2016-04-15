@@ -1,0 +1,1634 @@
+positions:
+ 0.04311 0.0387308 0.0965247 0.107017 0.0636499 0.0299327 0.00392134 0.122882 0.0338506 0.0326528 0.284894 0.00595044 0.0655804 0.059559 0.0117443
+prices:
+ 35.0254 34.6027 34.2095 34.3766 33.8065 32.9316 32.8923 31.8011 31.7519 32.0567 31.9191 31.4963 31.3784 31.5258 31.2014
+deltas:
+ -0.015637 0.0420708 0.00502943 0.00278069 0.00417328 -0.00600135 0.0337517 0.0853058 0.017345 -0.00532803 0.0151016 -0.0881909 0.000857117 0.254251 -0.0440589
+sigmas:
+ 0.471939 0.784601 0.161411 0.0835941 0.124016 0.685152 3.19873 0.955681 0.319281 0.42088 0.136346 1.52878 0.0754416 6.79913 0.827808
+quantities:
+ 1.23082e+07 9.08142e+06 6.6098e+07 1.34084e+08 5.51519e+07 6.56294e+06 539539 1.26903e+07 1.95832e+07 1.06813e+07 1.59391e+08 881547 8.55151e+07 994437 2.11527e+06
+right before sigmas:
+ 0.471939 0.784601 0.161411 0.0835941 0.124016 0.685152 3.19873 0.955681 0.319281 0.42088 0.136346 1.52878 0.0754416 6.79913 0.827808
+Before optimization: Portfolio value: 1.1402e+10
+asset    0 at weight 0.036722 target 0.043110
+asset    1 at weight 0.039826 target 0.038731
+asset    2 at weight 0.106720 target 0.096525
+asset    3 at weight 0.111183 target 0.107017
+asset    4 at weight 0.058681 target 0.063650
+asset    5 at weight 0.025106 target 0.029933
+asset    6 at weight 0.005344 target 0.003921
+asset    7 at weight 0.114761 target 0.122882
+asset    8 at weight 0.043832 target 0.033851
+asset    9 at weight 0.024082 target 0.032653
+asset   10 at weight 0.309100 target 0.284894
+asset   11 at weight 0.002550 target 0.005950
+asset   12 at weight 0.063460 target 0.065580
+asset   13 at weight 0.051450 target 0.059559
+asset   14 at weight 0.007183 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [8e+00, 6e+02]
+  Bounds range    [5e+05, 1e+10]
+  RHS range       [1e+07, 3e+08]
+Presolve time: 0.00s
+Presolved: 15 rows, 30 columns, 450 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.606198e+07   0.000000e+00      0s
+
+Solved in 24 iterations and 0.00 seconds
+Infeasible model
+After optimization:
+Portfolio value: -27.1132
+asset    0 at weight 0.043110 target 0.043110
+asset    1 at weight 0.038731 target 0.038731
+asset    2 at weight 0.096525 target 0.096525
+asset    3 at weight 0.107017 target 0.107017
+asset    4 at weight 0.063650 target 0.063650
+asset    5 at weight 0.029933 target 0.029933
+asset    6 at weight 0.003921 target 0.003921
+asset    7 at weight 0.122882 target 0.122882
+asset    8 at weight 0.033851 target 0.033851
+asset    9 at weight 0.032653 target 0.032653
+asset   10 at weight 0.284894 target 0.284894
+asset   11 at weight 0.005950 target 0.005950
+asset   12 at weight 0.065580 target 0.065580
+asset   13 at weight 0.059559 target 0.059559
+asset   14 at weight 0.011744 target 0.011744
+Before optimization: Portfolio value: -28.2371
+asset    0 at weight 0.042732 target 0.043110
+asset    1 at weight 0.036927 target 0.038731
+asset    2 at weight 0.092001 target 0.096525
+asset    3 at weight 0.103266 target 0.107017
+asset    4 at weight 0.066551 target 0.063650
+asset    5 at weight 0.029145 target 0.029933
+asset    6 at weight 0.004427 target 0.003921
+asset    7 at weight 0.125592 target 0.122882
+asset    8 at weight 0.032417 target 0.033851
+asset    9 at weight 0.035450 target 0.032653
+asset   10 at weight 0.284867 target 0.284894
+asset   11 at weight 0.009041 target 0.005950
+asset   12 at weight 0.064501 target 0.065580
+asset   13 at weight 0.061906 target 0.059559
+asset   14 at weight 0.011179 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [9e-04, 1e+10]
+  RHS range       [8e-04, 1e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -29.3832
+asset    0 at weight 0.039187 target 0.043110
+asset    1 at weight 0.039048 target 0.038731
+asset    2 at weight 0.093193 target 0.096525
+asset    3 at weight 0.096070 target 0.107017
+asset    4 at weight 0.067029 target 0.063650
+asset    5 at weight 0.029215 target 0.029933
+asset    6 at weight 0.004115 target 0.003921
+asset    7 at weight 0.122977 target 0.122882
+asset    8 at weight 0.031790 target 0.033851
+asset    9 at weight 0.037364 target 0.032653
+asset   10 at weight 0.292244 target 0.284894
+asset   11 at weight 0.006219 target 0.005950
+asset   12 at weight 0.066625 target 0.065580
+asset   13 at weight 0.060425 target 0.059559
+asset   14 at weight 0.014500 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [9e-04, 1e+10]
+  RHS range       [3e-03, 3e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -29.2025
+asset    0 at weight 0.038940 target 0.043110
+asset    1 at weight 0.033583 target 0.038731
+asset    2 at weight 0.086716 target 0.096525
+asset    3 at weight 0.093188 target 0.107017
+asset    4 at weight 0.062511 target 0.063650
+asset    5 at weight 0.032843 target 0.029933
+asset    6 at weight 0.002834 target 0.003921
+asset    7 at weight 0.142720 target 0.122882
+asset    8 at weight 0.032158 target 0.033851
+asset    9 at weight 0.035697 target 0.032653
+asset   10 at weight 0.294286 target 0.284894
+asset   11 at weight 0.005992 target 0.005950
+asset   12 at weight 0.067557 target 0.065580
+asset   13 at weight 0.060203 target 0.059559
+asset   14 at weight 0.010771 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [9e-04, 1e+10]
+  RHS range       [1e-03, 6e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -29.9556
+asset    0 at weight 0.033568 target 0.043110
+asset    1 at weight 0.043893 target 0.038731
+asset    2 at weight 0.086523 target 0.096525
+asset    3 at weight 0.100519 target 0.107017
+asset    4 at weight 0.064428 target 0.063650
+asset    5 at weight 0.026291 target 0.029933
+asset    6 at weight 0.001795 target 0.003921
+asset    7 at weight 0.150208 target 0.122882
+asset    8 at weight 0.031701 target 0.033851
+asset    9 at weight 0.026882 target 0.032653
+asset   10 at weight 0.290005 target 0.284894
+asset   11 at weight 0.005094 target 0.005950
+asset   12 at weight 0.060772 target 0.065580
+asset   13 at weight 0.069491 target 0.059559
+asset   14 at weight 0.008831 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 7e+02]
+  Objective range [9e+00, 8e+02]
+  Bounds range    [9e-04, 1e+10]
+  RHS range       [2e-02, 8e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+run 0: portfolio value: -29.7344
+run 0: portfolio return: -0.00155975
+Before optimization: Portfolio value: 1.13633e+10
+asset    0 at weight 0.037411 target 0.043110
+asset    1 at weight 0.040298 target 0.038731
+asset    2 at weight 0.107511 target 0.096525
+asset    3 at weight 0.112773 target 0.107017
+asset    4 at weight 0.060232 target 0.063650
+asset    5 at weight 0.024414 target 0.029933
+asset    6 at weight 0.005591 target 0.003921
+asset    7 at weight 0.113443 target 0.122882
+asset    8 at weight 0.042785 target 0.033851
+asset    9 at weight 0.024386 target 0.032653
+asset   10 at weight 0.305982 target 0.284894
+asset   11 at weight 0.002574 target 0.005950
+asset   12 at weight 0.063445 target 0.065580
+asset   13 at weight 0.051967 target 0.059559
+asset   14 at weight 0.007189 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [8e+00, 6e+02]
+  Bounds range    [5e+05, 1e+10]
+  RHS range       [2e+07, 2e+08]
+Presolve time: 0.00s
+Presolved: 15 rows, 30 columns, 450 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.575160e+07   0.000000e+00      0s
+
+Solved in 24 iterations and 0.00 seconds
+Infeasible model
+After optimization:
+Portfolio value: -29.8023
+asset    0 at weight 0.043110 target 0.043110
+asset    1 at weight 0.038731 target 0.038731
+asset    2 at weight 0.096525 target 0.096525
+asset    3 at weight 0.107017 target 0.107017
+asset    4 at weight 0.063650 target 0.063650
+asset    5 at weight 0.029933 target 0.029933
+asset    6 at weight 0.003921 target 0.003921
+asset    7 at weight 0.122882 target 0.122882
+asset    8 at weight 0.033851 target 0.033851
+asset    9 at weight 0.032653 target 0.032653
+asset   10 at weight 0.284894 target 0.284894
+asset   11 at weight 0.005950 target 0.005950
+asset   12 at weight 0.065580 target 0.065580
+asset   13 at weight 0.059559 target 0.059559
+asset   14 at weight 0.011744 target 0.011744
+Before optimization: Portfolio value: -31.2251
+asset    0 at weight 0.041609 target 0.043110
+asset    1 at weight 0.035984 target 0.038731
+asset    2 at weight 0.090692 target 0.096525
+asset    3 at weight 0.101304 target 0.107017
+asset    4 at weight 0.064185 target 0.063650
+asset    5 at weight 0.030388 target 0.029933
+asset    6 at weight 0.004231 target 0.003921
+asset    7 at weight 0.127049 target 0.122882
+asset    8 at weight 0.033797 target 0.033851
+asset    9 at weight 0.033258 target 0.032653
+asset   10 at weight 0.290913 target 0.284894
+asset   11 at weight 0.009487 target 0.005950
+asset   12 at weight 0.065620 target 0.065580
+asset   13 at weight 0.060487 target 0.059559
+asset   14 at weight 0.010996 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [1e-03, 1e+10]
+  RHS range       [1e-03, 2e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -32.2306
+asset    0 at weight 0.038912 target 0.043110
+asset    1 at weight 0.039277 target 0.038731
+asset    2 at weight 0.091312 target 0.096525
+asset    3 at weight 0.096159 target 0.107017
+asset    4 at weight 0.064705 target 0.063650
+asset    5 at weight 0.030612 target 0.029933
+asset    6 at weight 0.003887 target 0.003921
+asset    7 at weight 0.124831 target 0.122882
+asset    8 at weight 0.033349 target 0.033851
+asset    9 at weight 0.036695 target 0.032653
+asset   10 at weight 0.293467 target 0.284894
+asset   11 at weight 0.006160 target 0.005950
+asset   12 at weight 0.066566 target 0.065580
+asset   13 at weight 0.059399 target 0.059559
+asset   14 at weight 0.014670 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [1e-03, 1e+10]
+  RHS range       [1e-03, 3e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -32.2059
+asset    0 at weight 0.037248 target 0.043110
+asset    1 at weight 0.032128 target 0.038731
+asset    2 at weight 0.086575 target 0.096525
+asset    3 at weight 0.091570 target 0.107017
+asset    4 at weight 0.060638 target 0.063650
+asset    5 at weight 0.034573 target 0.029933
+asset    6 at weight 0.002350 target 0.003921
+asset    7 at weight 0.145992 target 0.122882
+asset    8 at weight 0.033132 target 0.033851
+asset    9 at weight 0.034783 target 0.032653
+asset   10 at weight 0.294351 target 0.284894
+asset   11 at weight 0.006347 target 0.005950
+asset   12 at weight 0.069375 target 0.065580
+asset   13 at weight 0.059392 target 0.059559
+asset   14 at weight 0.011547 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [1e-03, 1e+10]
+  RHS range       [5e-03, 7e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -32.9943
+asset    0 at weight 0.033454 target 0.043110
+asset    1 at weight 0.043018 target 0.038731
+asset    2 at weight 0.086695 target 0.096525
+asset    3 at weight 0.099356 target 0.107017
+asset    4 at weight 0.063595 target 0.063650
+asset    5 at weight 0.026836 target 0.029933
+asset    6 at weight 0.001547 target 0.003921
+asset    7 at weight 0.150857 target 0.122882
+asset    8 at weight 0.032405 target 0.033851
+asset    9 at weight 0.025827 target 0.032653
+asset   10 at weight 0.292649 target 0.284894
+asset   11 at weight 0.004837 target 0.005950
+asset   12 at weight 0.060356 target 0.065580
+asset   13 at weight 0.069538 target 0.059559
+asset   14 at weight 0.009030 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 7e+02]
+  Objective range [9e+00, 8e+02]
+  Bounds range    [1e-03, 1e+10]
+  RHS range       [2e-03, 9e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+run 1: portfolio value: -32.8401
+run 1: portfolio return: -0.00152034
+Before optimization: Portfolio value: 1.13852e+10
+asset    0 at weight 0.037201 target 0.043110
+asset    1 at weight 0.039625 target 0.038731
+asset    2 at weight 0.106019 target 0.096525
+asset    3 at weight 0.111035 target 0.107017
+asset    4 at weight 0.059536 target 0.063650
+asset    5 at weight 0.024578 target 0.029933
+asset    6 at weight 0.005514 target 0.003921
+asset    7 at weight 0.114776 target 0.122882
+asset    8 at weight 0.045444 target 0.033851
+asset    9 at weight 0.024400 target 0.032653
+asset   10 at weight 0.306895 target 0.284894
+asset   11 at weight 0.002539 target 0.005950
+asset   12 at weight 0.064117 target 0.065580
+asset   13 at weight 0.051401 target 0.059559
+asset   14 at weight 0.006920 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [5e+05, 1e+10]
+  RHS range       [1e+07, 3e+08]
+Presolve time: 0.00s
+Presolved: 15 rows, 30 columns, 450 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.601692e+07   0.000000e+00      0s
+      30    1.1385227e+10   0.000000e+00   0.000000e+00      0s
+
+Solved in 30 iterations and 0.00 seconds
+Optimal objective  1.138522683e+10
+Warning: unscaled dual violation = 3.93391e-06 and residual = 3.93391e-06
+After optimization:
+Portfolio value: 27.7405
+asset    0 at weight 0.043110 target 0.043110
+asset    1 at weight 0.038731 target 0.038731
+asset    2 at weight 0.096525 target 0.096525
+asset    3 at weight 0.107017 target 0.107017
+asset    4 at weight 0.063650 target 0.063650
+asset    5 at weight 0.029933 target 0.029933
+asset    6 at weight 0.003921 target 0.003921
+asset    7 at weight 0.122882 target 0.122882
+asset    8 at weight 0.033851 target 0.033851
+asset    9 at weight 0.032653 target 0.032653
+asset   10 at weight 0.284894 target 0.284894
+asset   11 at weight 0.005950 target 0.005950
+asset   12 at weight 0.065580 target 0.065580
+asset   13 at weight 0.059559 target 0.059559
+asset   14 at weight 0.011744 target 0.011744
+Before optimization: Portfolio value: 29.037
+asset    0 at weight 0.040953 target 0.043110
+asset    1 at weight 0.037424 target 0.038731
+asset    2 at weight 0.094133 target 0.096525
+asset    3 at weight 0.103349 target 0.107017
+asset    4 at weight 0.063923 target 0.063650
+asset    5 at weight 0.029807 target 0.029933
+asset    6 at weight 0.004146 target 0.003921
+asset    7 at weight 0.125722 target 0.122882
+asset    8 at weight 0.031268 target 0.033851
+asset    9 at weight 0.033988 target 0.032653
+asset   10 at weight 0.288864 target 0.284894
+asset   11 at weight 0.009446 target 0.005950
+asset   12 at weight 0.064365 target 0.065580
+asset   13 at weight 0.061197 target 0.059559
+asset   14 at weight 0.011417 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [9e-04, 1e+10]
+  RHS range       [4e-03, 1e-01]
+Presolve time: 0.00s
+Presolved: 15 rows, 30 columns, 450 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.067693e-02   0.000000e+00      0s
+      14    7.7617071e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 14 iterations and 0.00 seconds
+Optimal objective  7.761707111e-01
+After optimization:
+Portfolio value: 29.4416
+asset    0 at weight 0.043110 target 0.043110
+asset    1 at weight 0.038731 target 0.038731
+asset    2 at weight 0.096525 target 0.096525
+asset    3 at weight 0.107017 target 0.107017
+asset    4 at weight 0.063650 target 0.063650
+asset    5 at weight 0.029933 target 0.029933
+asset    6 at weight 0.003921 target 0.003921
+asset    7 at weight 0.122882 target 0.122882
+asset    8 at weight 0.033851 target 0.033851
+asset    9 at weight 0.032653 target 0.032653
+asset   10 at weight 0.284894 target 0.284894
+asset   11 at weight 0.005950 target 0.005950
+asset   12 at weight 0.065580 target 0.065580
+asset   13 at weight 0.059559 target 0.059559
+asset   14 at weight 0.011744 target 0.011744
+Before optimization: Portfolio value: 30.5653
+asset    0 at weight 0.040384 target 0.043110
+asset    1 at weight 0.039880 target 0.038731
+asset    2 at weight 0.093990 target 0.096525
+asset    3 at weight 0.102464 target 0.107017
+asset    4 at weight 0.067479 target 0.063650
+asset    5 at weight 0.029971 target 0.029933
+asset    6 at weight 0.003475 target 0.003921
+asset    7 at weight 0.120904 target 0.122882
+asset    8 at weight 0.033544 target 0.033851
+asset    9 at weight 0.034869 target 0.032653
+asset   10 at weight 0.288701 target 0.284894
+asset   11 at weight 0.003917 target 0.005950
+asset   12 at weight 0.066246 target 0.065580
+asset   13 at weight 0.058588 target 0.059559
+asset   14 at weight 0.015589 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [9e-04, 1e+10]
+  RHS range       [1e-03, 1e-01]
+Presolve time: 0.00s
+Presolved: 15 rows, 30 columns, 450 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.389491e-02   0.000000e+00      0s
+      14    9.4847679e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 14 iterations and 0.00 seconds
+Optimal objective  9.484767890e-01
+After optimization:
+Portfolio value: 30.604
+asset    0 at weight 0.043110 target 0.043110
+asset    1 at weight 0.038731 target 0.038731
+asset    2 at weight 0.096525 target 0.096525
+asset    3 at weight 0.107017 target 0.107017
+asset    4 at weight 0.063650 target 0.063650
+asset    5 at weight 0.029933 target 0.029933
+asset    6 at weight 0.003921 target 0.003921
+asset    7 at weight 0.122882 target 0.122882
+asset    8 at weight 0.033851 target 0.033851
+asset    9 at weight 0.032653 target 0.032653
+asset   10 at weight 0.284894 target 0.284894
+asset   11 at weight 0.005950 target 0.005950
+asset   12 at weight 0.065580 target 0.065580
+asset   13 at weight 0.059559 target 0.059559
+asset   14 at weight 0.011744 target 0.011744
+Before optimization: Portfolio value: 30.4763
+asset    0 at weight 0.043159 target 0.043110
+asset    1 at weight 0.034458 target 0.038731
+asset    2 at weight 0.090868 target 0.096525
+asset    3 at weight 0.102172 target 0.107017
+asset    4 at weight 0.057258 target 0.063650
+asset    5 at weight 0.033747 target 0.029933
+asset    6 at weight 0.003003 target 0.003921
+asset    7 at weight 0.141752 target 0.122882
+asset    8 at weight 0.033749 target 0.033851
+asset    9 at weight 0.031454 target 0.032653
+asset   10 at weight 0.287405 target 0.284894
+asset   11 at weight 0.005990 target 0.005950
+asset   12 at weight 0.068094 target 0.065580
+asset   13 at weight 0.057767 target 0.059559
+asset   14 at weight 0.009123 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [1e-03, 1e+10]
+  RHS range       [1e-03, 6e-01]
+Presolve time: 0.00s
+Presolved: 15 rows, 30 columns, 450 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.955466e-02   0.000000e+00      0s
+      14    1.6871626e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 14 iterations and 0.00 seconds
+Optimal objective  1.687162647e+00
+After optimization:
+Portfolio value: 30.7449
+asset    0 at weight 0.043110 target 0.043110
+asset    1 at weight 0.038731 target 0.038731
+asset    2 at weight 0.096525 target 0.096525
+asset    3 at weight 0.107017 target 0.107017
+asset    4 at weight 0.063650 target 0.063650
+asset    5 at weight 0.029933 target 0.029933
+asset    6 at weight 0.003921 target 0.003921
+asset    7 at weight 0.122882 target 0.122882
+asset    8 at weight 0.033851 target 0.033851
+asset    9 at weight 0.032653 target 0.032653
+asset   10 at weight 0.284894 target 0.284894
+asset   11 at weight 0.005950 target 0.005950
+asset   12 at weight 0.065580 target 0.065580
+asset   13 at weight 0.059559 target 0.059559
+asset   14 at weight 0.011744 target 0.011744
+Before optimization: Portfolio value: 31.4015
+asset    0 at weight 0.036594 target 0.043110
+asset    1 at weight 0.049501 target 0.038731
+asset    2 at weight 0.097843 target 0.096525
+asset    3 at weight 0.114671 target 0.107017
+asset    4 at weight 0.065871 target 0.063650
+asset    5 at weight 0.023025 target 0.029933
+asset    6 at weight 0.002191 target 0.003921
+asset    7 at weight 0.128345 target 0.122882
+asset    8 at weight 0.033353 target 0.033851
+asset    9 at weight 0.025160 target 0.032653
+asset   10 at weight 0.280295 target 0.284894
+asset   11 at weight 0.004109 target 0.005950
+asset   12 at weight 0.058636 target 0.065580
+asset   13 at weight 0.071449 target 0.059559
+asset   14 at weight 0.008958 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 7e+02]
+  Objective range [9e+00, 8e+02]
+  Bounds range    [1e-03, 1e+10]
+  RHS range       [2e-02, 4e-01]
+Presolve time: 0.00s
+Presolved: 15 rows, 30 columns, 450 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   3.406882e-02   0.000000e+00      0s
+      14    2.4584139e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 14 iterations and 0.00 seconds
+Optimal objective  2.458413891e+00
+After optimization:
+Portfolio value: 30.9401
+asset    0 at weight 0.043110 target 0.043110
+asset    1 at weight 0.038731 target 0.038731
+asset    2 at weight 0.096525 target 0.096525
+asset    3 at weight 0.107017 target 0.107017
+asset    4 at weight 0.063650 target 0.063650
+asset    5 at weight 0.029933 target 0.029933
+asset    6 at weight 0.003921 target 0.003921
+asset    7 at weight 0.122882 target 0.122882
+asset    8 at weight 0.033851 target 0.033851
+asset    9 at weight 0.032653 target 0.032653
+asset   10 at weight 0.284894 target 0.284894
+asset   11 at weight 0.005950 target 0.005950
+asset   12 at weight 0.065580 target 0.065580
+asset   13 at weight 0.059559 target 0.059559
+asset   14 at weight 0.011744 target 0.011744
+run 2: portfolio value: 30.9172
+run 2: portfolio return: -0.00150056
+Before optimization: Portfolio value: 1.13173e+10
+asset    0 at weight 0.037184 target 0.043110
+asset    1 at weight 0.039313 target 0.038731
+asset    2 at weight 0.106332 target 0.096525
+asset    3 at weight 0.110802 target 0.107017
+asset    4 at weight 0.059885 target 0.063650
+asset    5 at weight 0.025356 target 0.029933
+asset    6 at weight 0.005437 target 0.003921
+asset    7 at weight 0.115622 target 0.122882
+asset    8 at weight 0.043348 target 0.033851
+asset    9 at weight 0.024726 target 0.032653
+asset   10 at weight 0.307148 target 0.284894
+asset   11 at weight 0.002639 target 0.005950
+asset   12 at weight 0.063990 target 0.065580
+asset   13 at weight 0.051107 target 0.059559
+asset   14 at weight 0.007110 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 5e+02]
+  Objective range [8e+00, 6e+02]
+  Bounds range    [5e+05, 1e+10]
+  RHS range       [7e+06, 3e+08]
+Presolve time: 0.00s
+Presolved: 15 rows, 30 columns, 450 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.473142e+07   0.000000e+00      0s
+
+Solved in 30 iterations and 0.00 seconds
+Infeasible model
+After optimization:
+Portfolio value: -75.1075
+asset    0 at weight 0.043110 target 0.043110
+asset    1 at weight 0.038731 target 0.038731
+asset    2 at weight 0.096525 target 0.096525
+asset    3 at weight 0.107017 target 0.107017
+asset    4 at weight 0.063650 target 0.063650
+asset    5 at weight 0.029933 target 0.029933
+asset    6 at weight 0.003921 target 0.003921
+asset    7 at weight 0.122882 target 0.122882
+asset    8 at weight 0.033851 target 0.033851
+asset    9 at weight 0.032653 target 0.032653
+asset   10 at weight 0.284894 target 0.284894
+asset   11 at weight 0.005950 target 0.005950
+asset   12 at weight 0.065580 target 0.065580
+asset   13 at weight 0.059559 target 0.059559
+asset   14 at weight 0.011744 target 0.011744
+Before optimization: Portfolio value: -78.8738
+asset    0 at weight 0.041510 target 0.043110
+asset    1 at weight 0.037007 target 0.038731
+asset    2 at weight 0.092632 target 0.096525
+asset    3 at weight 0.103751 target 0.107017
+asset    4 at weight 0.065945 target 0.063650
+asset    5 at weight 0.028734 target 0.029933
+asset    6 at weight 0.004191 target 0.003921
+asset    7 at weight 0.125372 target 0.122882
+asset    8 at weight 0.033305 target 0.033851
+asset    9 at weight 0.032641 target 0.032653
+asset   10 at weight 0.288580 target 0.284894
+asset   11 at weight 0.008989 target 0.005950
+asset   12 at weight 0.064137 target 0.065580
+asset   13 at weight 0.061799 target 0.059559
+asset   14 at weight 0.011407 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [3e-03, 1e+10]
+  RHS range       [9e-04, 3e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -81.8166
+asset    0 at weight 0.037746 target 0.043110
+asset    1 at weight 0.039280 target 0.038731
+asset    2 at weight 0.092943 target 0.096525
+asset    3 at weight 0.098152 target 0.107017
+asset    4 at weight 0.065167 target 0.063650
+asset    5 at weight 0.028948 target 0.029933
+asset    6 at weight 0.003969 target 0.003921
+asset    7 at weight 0.123353 target 0.122882
+asset    8 at weight 0.032185 target 0.033851
+asset    9 at weight 0.035872 target 0.032653
+asset   10 at weight 0.294274 target 0.284894
+asset   11 at weight 0.005983 target 0.005950
+asset   12 at weight 0.066446 target 0.065580
+asset   13 at weight 0.060875 target 0.059559
+asset   14 at weight 0.014806 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [3e-03, 1e+10]
+  RHS range       [3e-03, 8e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -80.9211
+asset    0 at weight 0.037221 target 0.043110
+asset    1 at weight 0.033720 target 0.038731
+asset    2 at weight 0.087075 target 0.096525
+asset    3 at weight 0.096172 target 0.107017
+asset    4 at weight 0.060853 target 0.063650
+asset    5 at weight 0.032459 target 0.029933
+asset    6 at weight 0.002489 target 0.003921
+asset    7 at weight 0.142226 target 0.122882
+asset    8 at weight 0.032544 target 0.033851
+asset    9 at weight 0.035951 target 0.032653
+asset   10 at weight 0.294170 target 0.284894
+asset   11 at weight 0.005964 target 0.005950
+asset   12 at weight 0.067323 target 0.065580
+asset   13 at weight 0.060391 target 0.059559
+asset   14 at weight 0.011441 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [3e-03, 1e+10]
+  RHS range       [1e-03, 2e+00]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -83.6348
+asset    0 at weight 0.032370 target 0.043110
+asset    1 at weight 0.044050 target 0.038731
+asset    2 at weight 0.086994 target 0.096525
+asset    3 at weight 0.102851 target 0.107017
+asset    4 at weight 0.063234 target 0.063650
+asset    5 at weight 0.025670 target 0.029933
+asset    6 at weight 0.001745 target 0.003921
+asset    7 at weight 0.148714 target 0.122882
+asset    8 at weight 0.031746 target 0.033851
+asset    9 at weight 0.025991 target 0.032653
+asset   10 at weight 0.291955 target 0.284894
+asset   11 at weight 0.004583 target 0.005950
+asset   12 at weight 0.060539 target 0.065580
+asset   13 at weight 0.069886 target 0.059559
+asset   14 at weight 0.009671 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 7e+02]
+  Objective range [9e+00, 8e+02]
+  Bounds range    [3e-03, 1e+10]
+  RHS range       [3e-02, 2e+00]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+run 3: portfolio value: -83.1909
+run 3: portfolio return: -0.00151696
+Before optimization: Portfolio value: 1.12968e+10
+asset    0 at weight 0.037106 target 0.043110
+asset    1 at weight 0.038979 target 0.038731
+asset    2 at weight 0.105548 target 0.096525
+asset    3 at weight 0.111063 target 0.107017
+asset    4 at weight 0.059640 target 0.063650
+asset    5 at weight 0.024539 target 0.029933
+asset    6 at weight 0.005389 target 0.003921
+asset    7 at weight 0.112948 target 0.122882
+asset    8 at weight 0.045435 target 0.033851
+asset    9 at weight 0.024373 target 0.032653
+asset   10 at weight 0.308933 target 0.284894
+asset   11 at weight 0.002626 target 0.005950
+asset   12 at weight 0.064132 target 0.065580
+asset   13 at weight 0.051981 target 0.059559
+asset   14 at weight 0.007309 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [8e+00, 6e+02]
+  Bounds range    [5e+05, 1e+10]
+  RHS range       [3e+06, 3e+08]
+Presolve time: 0.00s
+Presolved: 15 rows, 30 columns, 450 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.585923e+07   0.000000e+00      0s
+
+Solved in 28 iterations and 0.00 seconds
+Infeasible model
+After optimization:
+Portfolio value: -3.67328
+asset    0 at weight 0.043110 target 0.043110
+asset    1 at weight 0.038731 target 0.038731
+asset    2 at weight 0.096525 target 0.096525
+asset    3 at weight 0.107017 target 0.107017
+asset    4 at weight 0.063650 target 0.063650
+asset    5 at weight 0.029933 target 0.029933
+asset    6 at weight 0.003921 target 0.003921
+asset    7 at weight 0.122882 target 0.122882
+asset    8 at weight 0.033851 target 0.033851
+asset    9 at weight 0.032653 target 0.032653
+asset   10 at weight 0.284894 target 0.284894
+asset   11 at weight 0.005950 target 0.005950
+asset   12 at weight 0.065580 target 0.065580
+asset   13 at weight 0.059559 target 0.059559
+asset   14 at weight 0.011744 target 0.011744
+Before optimization: Portfolio value: -3.89214
+asset    0 at weight 0.041777 target 0.043110
+asset    1 at weight 0.037898 target 0.038731
+asset    2 at weight 0.095183 target 0.096525
+asset    3 at weight 0.102049 target 0.107017
+asset    4 at weight 0.065628 target 0.063650
+asset    5 at weight 0.029276 target 0.029933
+asset    6 at weight 0.004375 target 0.003921
+asset    7 at weight 0.127651 target 0.122882
+asset    8 at weight 0.031749 target 0.033851
+asset    9 at weight 0.034012 target 0.032653
+asset   10 at weight 0.287086 target 0.284894
+asset   11 at weight 0.008870 target 0.005950
+asset   12 at weight 0.063381 target 0.065580
+asset   13 at weight 0.060398 target 0.059559
+asset   14 at weight 0.010666 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [1e-04, 1e+10]
+  RHS range       [2e-03, 2e-02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -4.00707
+asset    0 at weight 0.038663 target 0.043110
+asset    1 at weight 0.040602 target 0.038731
+asset    2 at weight 0.093564 target 0.096525
+asset    3 at weight 0.098574 target 0.107017
+asset    4 at weight 0.067709 target 0.063650
+asset    5 at weight 0.029634 target 0.029933
+asset    6 at weight 0.004227 target 0.003921
+asset    7 at weight 0.125293 target 0.122882
+asset    8 at weight 0.030386 target 0.033851
+asset    9 at weight 0.036550 target 0.032653
+asset   10 at weight 0.290191 target 0.284894
+asset   11 at weight 0.005960 target 0.005950
+asset   12 at weight 0.065741 target 0.065580
+asset   13 at weight 0.058528 target 0.059559
+asset   14 at weight 0.014378 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [1e-04, 1e+10]
+  RHS range       [4e-05, 3e-02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -3.98327
+asset    0 at weight 0.038187 target 0.043110
+asset    1 at weight 0.034588 target 0.038731
+asset    2 at weight 0.087361 target 0.096525
+asset    3 at weight 0.093442 target 0.107017
+asset    4 at weight 0.060471 target 0.063650
+asset    5 at weight 0.033102 target 0.029933
+asset    6 at weight 0.002854 target 0.003921
+asset    7 at weight 0.144448 target 0.122882
+asset    8 at weight 0.031039 target 0.033851
+asset    9 at weight 0.034783 target 0.032653
+asset   10 at weight 0.296344 target 0.284894
+asset   11 at weight 0.005852 target 0.005950
+asset   12 at weight 0.066055 target 0.065580
+asset   13 at weight 0.060454 target 0.059559
+asset   14 at weight 0.011019 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [1e-04, 1e+10]
+  RHS range       [4e-04, 9e-02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -4.10368
+asset    0 at weight 0.032968 target 0.043110
+asset    1 at weight 0.044171 target 0.038731
+asset    2 at weight 0.088119 target 0.096525
+asset    3 at weight 0.100538 target 0.107017
+asset    4 at weight 0.064509 target 0.063650
+asset    5 at weight 0.027046 target 0.029933
+asset    6 at weight 0.001512 target 0.003921
+asset    7 at weight 0.150680 target 0.122882
+asset    8 at weight 0.030173 target 0.033851
+asset    9 at weight 0.026973 target 0.032653
+asset   10 at weight 0.290859 target 0.284894
+asset   11 at weight 0.005116 target 0.005950
+asset   12 at weight 0.059727 target 0.065580
+asset   13 at weight 0.068289 target 0.059559
+asset   14 at weight 0.009321 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 7e+02]
+  Objective range [9e+00, 8e+02]
+  Bounds range    [1e-04, 1e+10]
+  RHS range       [3e-03, 1e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+run 4: portfolio value: -4.0665
+run 4: portfolio return: -0.00152482
+Before optimization: Portfolio value: 1.1375e+10
+asset    0 at weight 0.036953 target 0.043110
+asset    1 at weight 0.038520 target 0.038731
+asset    2 at weight 0.106603 target 0.096525
+asset    3 at weight 0.110989 target 0.107017
+asset    4 at weight 0.059605 target 0.063650
+asset    5 at weight 0.024907 target 0.029933
+asset    6 at weight 0.005422 target 0.003921
+asset    7 at weight 0.116211 target 0.122882
+asset    8 at weight 0.043494 target 0.033851
+asset    9 at weight 0.024575 target 0.032653
+asset   10 at weight 0.306341 target 0.284894
+asset   11 at weight 0.002505 target 0.005950
+asset   12 at weight 0.064180 target 0.065580
+asset   13 at weight 0.052499 target 0.059559
+asset   14 at weight 0.007196 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [5e+05, 1e+10]
+  RHS range       [2e+06, 2e+08]
+Presolve time: 0.00s
+Presolved: 15 rows, 30 columns, 450 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.461434e+07   0.000000e+00      0s
+
+Solved in 25 iterations and 0.00 seconds
+Infeasible model
+After optimization:
+Portfolio value: -55.8373
+asset    0 at weight 0.043110 target 0.043110
+asset    1 at weight 0.038731 target 0.038731
+asset    2 at weight 0.096525 target 0.096525
+asset    3 at weight 0.107017 target 0.107017
+asset    4 at weight 0.063650 target 0.063650
+asset    5 at weight 0.029933 target 0.029933
+asset    6 at weight 0.003921 target 0.003921
+asset    7 at weight 0.122882 target 0.122882
+asset    8 at weight 0.033851 target 0.033851
+asset    9 at weight 0.032653 target 0.032653
+asset   10 at weight 0.284894 target 0.284894
+asset   11 at weight 0.005950 target 0.005950
+asset   12 at weight 0.065580 target 0.065580
+asset   13 at weight 0.059559 target 0.059559
+asset   14 at weight 0.011744 target 0.011744
+Before optimization: Portfolio value: -58.4084
+asset    0 at weight 0.042911 target 0.043110
+asset    1 at weight 0.037888 target 0.038731
+asset    2 at weight 0.091616 target 0.096525
+asset    3 at weight 0.104305 target 0.107017
+asset    4 at weight 0.064140 target 0.063650
+asset    5 at weight 0.028853 target 0.029933
+asset    6 at weight 0.004451 target 0.003921
+asset    7 at weight 0.125038 target 0.122882
+asset    8 at weight 0.033465 target 0.033851
+asset    9 at weight 0.032666 target 0.032653
+asset   10 at weight 0.290045 target 0.284894
+asset   11 at weight 0.009340 target 0.005950
+asset   12 at weight 0.063956 target 0.065580
+asset   13 at weight 0.060221 target 0.059559
+asset   14 at weight 0.011105 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [2e-03, 1e+10]
+  RHS range       [8e-04, 3e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -60.5805
+asset    0 at weight 0.039060 target 0.043110
+asset    1 at weight 0.041208 target 0.038731
+asset    2 at weight 0.091773 target 0.096525
+asset    3 at weight 0.097742 target 0.107017
+asset    4 at weight 0.065572 target 0.063650
+asset    5 at weight 0.029175 target 0.029933
+asset    6 at weight 0.004003 target 0.003921
+asset    7 at weight 0.123112 target 0.122882
+asset    8 at weight 0.032382 target 0.033851
+asset    9 at weight 0.036412 target 0.032653
+asset   10 at weight 0.294067 target 0.284894
+asset   11 at weight 0.006155 target 0.005950
+asset   12 at weight 0.065558 target 0.065580
+asset   13 at weight 0.059147 target 0.059559
+asset   14 at weight 0.014634 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [2e-03, 1e+10]
+  RHS range       [1e-03, 6e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -59.9529
+asset    0 at weight 0.037892 target 0.043110
+asset    1 at weight 0.034753 target 0.038731
+asset    2 at weight 0.087610 target 0.096525
+asset    3 at weight 0.096195 target 0.107017
+asset    4 at weight 0.060652 target 0.063650
+asset    5 at weight 0.032718 target 0.029933
+asset    6 at weight 0.002527 target 0.003921
+asset    7 at weight 0.140851 target 0.122882
+asset    8 at weight 0.032919 target 0.033851
+asset    9 at weight 0.035152 target 0.032653
+asset   10 at weight 0.296283 target 0.284894
+asset   11 at weight 0.006214 target 0.005950
+asset   12 at weight 0.065865 target 0.065580
+asset   13 at weight 0.059392 target 0.059559
+asset   14 at weight 0.010976 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [2e-03, 1e+10]
+  RHS range       [1e-02, 1e+00]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -61.7301
+asset    0 at weight 0.033794 target 0.043110
+asset    1 at weight 0.044465 target 0.038731
+asset    2 at weight 0.088075 target 0.096525
+asset    3 at weight 0.101920 target 0.107017
+asset    4 at weight 0.064613 target 0.063650
+asset    5 at weight 0.026767 target 0.029933
+asset    6 at weight 0.001614 target 0.003921
+asset    7 at weight 0.147245 target 0.122882
+asset    8 at weight 0.031671 target 0.033851
+asset    9 at weight 0.026119 target 0.032653
+asset   10 at weight 0.290674 target 0.284894
+asset   11 at weight 0.005068 target 0.005950
+asset   12 at weight 0.061312 target 0.065580
+asset   13 at weight 0.067979 target 0.059559
+asset   14 at weight 0.008684 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 7e+02]
+  Objective range [9e+00, 8e+02]
+  Bounds range    [2e-03, 1e+10]
+  RHS range       [5e-02, 2e+00]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+run 5: portfolio value: -61.3149
+run 5: portfolio return: -0.00152242
+Before optimization: Portfolio value: 1.13696e+10
+asset    0 at weight 0.037310 target 0.043110
+asset    1 at weight 0.038562 target 0.038731
+asset    2 at weight 0.108213 target 0.096525
+asset    3 at weight 0.111684 target 0.107017
+asset    4 at weight 0.060091 target 0.063650
+asset    5 at weight 0.024699 target 0.029933
+asset    6 at weight 0.005617 target 0.003921
+asset    7 at weight 0.114145 target 0.122882
+asset    8 at weight 0.044773 target 0.033851
+asset    9 at weight 0.024536 target 0.032653
+asset   10 at weight 0.305894 target 0.284894
+asset   11 at weight 0.002596 target 0.005950
+asset   12 at weight 0.063035 target 0.065580
+asset   13 at weight 0.051985 target 0.059559
+asset   14 at weight 0.006862 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [8e+00, 6e+02]
+  Bounds range    [5e+05, 1e+10]
+  RHS range       [2e+06, 2e+08]
+Presolve time: 0.00s
+Presolved: 15 rows, 30 columns, 450 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.615127e+07   0.000000e+00      0s
+
+Solved in 23 iterations and 0.00 seconds
+Infeasible model
+After optimization:
+Portfolio value: -79.7234
+asset    0 at weight 0.043110 target 0.043110
+asset    1 at weight 0.038731 target 0.038731
+asset    2 at weight 0.096525 target 0.096525
+asset    3 at weight 0.107017 target 0.107017
+asset    4 at weight 0.063650 target 0.063650
+asset    5 at weight 0.029933 target 0.029933
+asset    6 at weight 0.003921 target 0.003921
+asset    7 at weight 0.122882 target 0.122882
+asset    8 at weight 0.033851 target 0.033851
+asset    9 at weight 0.032653 target 0.032653
+asset   10 at weight 0.284894 target 0.284894
+asset   11 at weight 0.005950 target 0.005950
+asset   12 at weight 0.065580 target 0.065580
+asset   13 at weight 0.059559 target 0.059559
+asset   14 at weight 0.011744 target 0.011744
+Before optimization: Portfolio value: -83.4562
+asset    0 at weight 0.041134 target 0.043110
+asset    1 at weight 0.038480 target 0.038731
+asset    2 at weight 0.092272 target 0.096525
+asset    3 at weight 0.101588 target 0.107017
+asset    4 at weight 0.064540 target 0.063650
+asset    5 at weight 0.029134 target 0.029933
+asset    6 at weight 0.004186 target 0.003921
+asset    7 at weight 0.127549 target 0.122882
+asset    8 at weight 0.031768 target 0.033851
+asset    9 at weight 0.033487 target 0.032653
+asset   10 at weight 0.289604 target 0.284894
+asset   11 at weight 0.008888 target 0.005950
+asset   12 at weight 0.064674 target 0.065580
+asset   13 at weight 0.060855 target 0.059559
+asset   14 at weight 0.011841 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [3e-03, 1e+10]
+  RHS range       [8e-03, 5e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -86.3554
+asset    0 at weight 0.039435 target 0.043110
+asset    1 at weight 0.040615 target 0.038731
+asset    2 at weight 0.090183 target 0.096525
+asset    3 at weight 0.097655 target 0.107017
+asset    4 at weight 0.067101 target 0.063650
+asset    5 at weight 0.028943 target 0.029933
+asset    6 at weight 0.003678 target 0.003921
+asset    7 at weight 0.123112 target 0.122882
+asset    8 at weight 0.031669 target 0.033851
+asset    9 at weight 0.036554 target 0.032653
+asset   10 at weight 0.292969 target 0.284894
+asset   11 at weight 0.005856 target 0.005950
+asset   12 at weight 0.067707 target 0.065580
+asset   13 at weight 0.059198 target 0.059559
+asset   14 at weight 0.015323 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [3e-03, 1e+10]
+  RHS range       [8e-03, 8e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -86.0521
+asset    0 at weight 0.038468 target 0.043110
+asset    1 at weight 0.034825 target 0.038731
+asset    2 at weight 0.086689 target 0.096525
+asset    3 at weight 0.093528 target 0.107017
+asset    4 at weight 0.060287 target 0.063650
+asset    5 at weight 0.033070 target 0.029933
+asset    6 at weight 0.002703 target 0.003921
+asset    7 at weight 0.143109 target 0.122882
+asset    8 at weight 0.032058 target 0.033851
+asset    9 at weight 0.035663 target 0.032653
+asset   10 at weight 0.296893 target 0.284894
+asset   11 at weight 0.005861 target 0.005950
+asset   12 at weight 0.066966 target 0.065580
+asset   13 at weight 0.058434 target 0.059559
+asset   14 at weight 0.011445 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [3e-03, 1e+10]
+  RHS range       [8e-03, 2e+00]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -88.199
+asset    0 at weight 0.033455 target 0.043110
+asset    1 at weight 0.044467 target 0.038731
+asset    2 at weight 0.086310 target 0.096525
+asset    3 at weight 0.101291 target 0.107017
+asset    4 at weight 0.063166 target 0.063650
+asset    5 at weight 0.026203 target 0.029933
+asset    6 at weight 0.001614 target 0.003921
+asset    7 at weight 0.151293 target 0.122882
+asset    8 at weight 0.030907 target 0.033851
+asset    9 at weight 0.026441 target 0.032653
+asset   10 at weight 0.290736 target 0.284894
+asset   11 at weight 0.004396 target 0.005950
+asset   12 at weight 0.060841 target 0.065580
+asset   13 at weight 0.069307 target 0.059559
+asset   14 at weight 0.009571 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 7e+02]
+  Objective range [9e+00, 8e+02]
+  Bounds range    [3e-03, 1e+10]
+  RHS range       [4e-02, 3e+00]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+run 6: portfolio value: -88.3478
+run 6: portfolio return: -0.00152381
+Before optimization: Portfolio value: 1.14045e+10
+asset    0 at weight 0.037582 target 0.043110
+asset    1 at weight 0.038623 target 0.038731
+asset    2 at weight 0.107388 target 0.096525
+asset    3 at weight 0.111420 target 0.107017
+asset    4 at weight 0.060409 target 0.063650
+asset    5 at weight 0.024442 target 0.029933
+asset    6 at weight 0.005820 target 0.003921
+asset    7 at weight 0.114260 target 0.122882
+asset    8 at weight 0.043753 target 0.033851
+asset    9 at weight 0.024080 target 0.032653
+asset   10 at weight 0.306802 target 0.284894
+asset   11 at weight 0.002657 target 0.005950
+asset   12 at weight 0.064763 target 0.065580
+asset   13 at weight 0.051097 target 0.059559
+asset   14 at weight 0.006903 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [5e+05, 1e+10]
+  RHS range       [1e+06, 2e+08]
+Presolve time: 0.00s
+Presolved: 15 rows, 30 columns, 450 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.546759e+07   0.000000e+00      0s
+
+Solved in 31 iterations and 0.00 seconds
+Infeasible model
+After optimization:
+Portfolio value: -71.5256
+asset    0 at weight 0.043110 target 0.043110
+asset    1 at weight 0.038731 target 0.038731
+asset    2 at weight 0.096525 target 0.096525
+asset    3 at weight 0.107017 target 0.107017
+asset    4 at weight 0.063650 target 0.063650
+asset    5 at weight 0.029933 target 0.029933
+asset    6 at weight 0.003921 target 0.003921
+asset    7 at weight 0.122882 target 0.122882
+asset    8 at weight 0.033851 target 0.033851
+asset    9 at weight 0.032653 target 0.032653
+asset   10 at weight 0.284894 target 0.284894
+asset   11 at weight 0.005950 target 0.005950
+asset   12 at weight 0.065580 target 0.065580
+asset   13 at weight 0.059559 target 0.059559
+asset   14 at weight 0.011744 target 0.011744
+Before optimization: Portfolio value: -74.6697
+asset    0 at weight 0.040669 target 0.043110
+asset    1 at weight 0.038021 target 0.038731
+asset    2 at weight 0.091644 target 0.096525
+asset    3 at weight 0.103628 target 0.107017
+asset    4 at weight 0.065492 target 0.063650
+asset    5 at weight 0.028706 target 0.029933
+asset    6 at weight 0.004026 target 0.003921
+asset    7 at weight 0.127877 target 0.122882
+asset    8 at weight 0.032836 target 0.033851
+asset    9 at weight 0.033939 target 0.032653
+asset   10 at weight 0.287801 target 0.284894
+asset   11 at weight 0.008633 target 0.005950
+asset   12 at weight 0.063537 target 0.065580
+asset   13 at weight 0.061944 target 0.059559
+asset   14 at weight 0.011248 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [2e-03, 1e+10]
+  RHS range       [8e-03, 4e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -77.5937
+asset    0 at weight 0.039470 target 0.043110
+asset    1 at weight 0.040020 target 0.038731
+asset    2 at weight 0.091511 target 0.096525
+asset    3 at weight 0.097735 target 0.107017
+asset    4 at weight 0.064666 target 0.063650
+asset    5 at weight 0.029415 target 0.029933
+asset    6 at weight 0.003686 target 0.003921
+asset    7 at weight 0.124956 target 0.122882
+asset    8 at weight 0.032593 target 0.033851
+asset    9 at weight 0.036816 target 0.032653
+asset   10 at weight 0.292745 target 0.284894
+asset   11 at weight 0.005604 target 0.005950
+asset   12 at weight 0.065045 target 0.065580
+asset   13 at weight 0.060545 target 0.059559
+asset   14 at weight 0.015193 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [2e-03, 1e+10]
+  RHS range       [2e-02, 7e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -76.5504
+asset    0 at weight 0.036757 target 0.043110
+asset    1 at weight 0.034842 target 0.038731
+asset    2 at weight 0.086856 target 0.096525
+asset    3 at weight 0.094542 target 0.107017
+asset    4 at weight 0.061092 target 0.063650
+asset    5 at weight 0.033926 target 0.029933
+asset    6 at weight 0.002383 target 0.003921
+asset    7 at weight 0.143121 target 0.122882
+asset    8 at weight 0.032736 target 0.033851
+asset    9 at weight 0.035329 target 0.032653
+asset   10 at weight 0.294833 target 0.284894
+asset   11 at weight 0.005716 target 0.005950
+asset   12 at weight 0.066214 target 0.065580
+asset   13 at weight 0.060148 target 0.059559
+asset   14 at weight 0.011504 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [2e-03, 1e+10]
+  RHS range       [2e-02, 2e+00]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -78.9383
+asset    0 at weight 0.032825 target 0.043110
+asset    1 at weight 0.044138 target 0.038731
+asset    2 at weight 0.085978 target 0.096525
+asset    3 at weight 0.100765 target 0.107017
+asset    4 at weight 0.062681 target 0.063650
+asset    5 at weight 0.026283 target 0.029933
+asset    6 at weight 0.001451 target 0.003921
+asset    7 at weight 0.148967 target 0.122882
+asset    8 at weight 0.031789 target 0.033851
+asset    9 at weight 0.026857 target 0.032653
+asset   10 at weight 0.292398 target 0.284894
+asset   11 at weight 0.004493 target 0.005950
+asset   12 at weight 0.059691 target 0.065580
+asset   13 at weight 0.071596 target 0.059559
+asset   14 at weight 0.010087 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 7e+02]
+  Objective range [9e+00, 8e+02]
+  Bounds range    [2e-03, 1e+10]
+  RHS range       [8e-02, 2e+00]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+run 7: portfolio value: -78.8828
+run 7: portfolio return: -0.00152553
+Before optimization: Portfolio value: 1.14132e+10
+asset    0 at weight 0.037723 target 0.043110
+asset    1 at weight 0.038828 target 0.038731
+asset    2 at weight 0.107365 target 0.096525
+asset    3 at weight 0.112916 target 0.107017
+asset    4 at weight 0.060373 target 0.063650
+asset    5 at weight 0.024903 target 0.029933
+asset    6 at weight 0.005551 target 0.003921
+asset    7 at weight 0.116058 target 0.122882
+asset    8 at weight 0.044235 target 0.033851
+asset    9 at weight 0.024681 target 0.032653
+asset   10 at weight 0.303417 target 0.284894
+asset   11 at weight 0.002504 target 0.005950
+asset   12 at weight 0.063320 target 0.065580
+asset   13 at weight 0.050902 target 0.059559
+asset   14 at weight 0.007223 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 5e+02]
+  Objective range [8e+00, 6e+02]
+  Bounds range    [5e+05, 1e+10]
+  RHS range       [1e+06, 2e+08]
+Presolve time: 0.00s
+Presolved: 15 rows, 30 columns, 450 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.549166e+07   0.000000e+00      0s
+
+Solved in 31 iterations and 0.00 seconds
+Infeasible model
+After optimization:
+Portfolio value: -57.2703
+asset    0 at weight 0.043110 target 0.043110
+asset    1 at weight 0.038731 target 0.038731
+asset    2 at weight 0.096525 target 0.096525
+asset    3 at weight 0.107017 target 0.107017
+asset    4 at weight 0.063650 target 0.063650
+asset    5 at weight 0.029933 target 0.029933
+asset    6 at weight 0.003921 target 0.003921
+asset    7 at weight 0.122882 target 0.122882
+asset    8 at weight 0.033851 target 0.033851
+asset    9 at weight 0.032653 target 0.032653
+asset   10 at weight 0.284894 target 0.284894
+asset   11 at weight 0.005950 target 0.005950
+asset   12 at weight 0.065580 target 0.065580
+asset   13 at weight 0.059559 target 0.059559
+asset   14 at weight 0.011744 target 0.011744
+Before optimization: Portfolio value: -59.8406
+asset    0 at weight 0.041106 target 0.043110
+asset    1 at weight 0.038033 target 0.038731
+asset    2 at weight 0.093673 target 0.096525
+asset    3 at weight 0.101266 target 0.107017
+asset    4 at weight 0.063992 target 0.063650
+asset    5 at weight 0.028528 target 0.029933
+asset    6 at weight 0.004193 target 0.003921
+asset    7 at weight 0.123772 target 0.122882
+asset    8 at weight 0.032773 target 0.033851
+asset    9 at weight 0.033089 target 0.032653
+asset   10 at weight 0.292124 target 0.284894
+asset   11 at weight 0.009160 target 0.005950
+asset   12 at weight 0.065082 target 0.065580
+asset   13 at weight 0.062127 target 0.059559
+asset   14 at weight 0.011081 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [2e-03, 1e+10]
+  RHS range       [2e-02, 4e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -61.976
+asset    0 at weight 0.038181 target 0.043110
+asset    1 at weight 0.040166 target 0.038731
+asset    2 at weight 0.091395 target 0.096525
+asset    3 at weight 0.095497 target 0.107017
+asset    4 at weight 0.066477 target 0.063650
+asset    5 at weight 0.028397 target 0.029933
+asset    6 at weight 0.004054 target 0.003921
+asset    7 at weight 0.122286 target 0.122882
+asset    8 at weight 0.032517 target 0.033851
+asset    9 at weight 0.035754 target 0.032653
+asset   10 at weight 0.297628 target 0.284894
+asset   11 at weight 0.005876 target 0.005950
+asset   12 at weight 0.066123 target 0.065580
+asset   13 at weight 0.061091 target 0.059559
+asset   14 at weight 0.014558 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [2e-03, 1e+10]
+  RHS range       [5e-03, 8e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -61.7416
+asset    0 at weight 0.037446 target 0.043110
+asset    1 at weight 0.034092 target 0.038731
+asset    2 at weight 0.085656 target 0.096525
+asset    3 at weight 0.093431 target 0.107017
+asset    4 at weight 0.060189 target 0.063650
+asset    5 at weight 0.033285 target 0.029933
+asset    6 at weight 0.002701 target 0.003921
+asset    7 at weight 0.141115 target 0.122882
+asset    8 at weight 0.031557 target 0.033851
+asset    9 at weight 0.034805 target 0.032653
+asset   10 at weight 0.299501 target 0.284894
+asset   11 at weight 0.006061 target 0.005950
+asset   12 at weight 0.068080 target 0.065580
+asset   13 at weight 0.061061 target 0.059559
+asset   14 at weight 0.011020 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [2e-03, 1e+10]
+  RHS range       [7e-03, 1e+00]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -63.2023
+asset    0 at weight 0.032558 target 0.043110
+asset    1 at weight 0.043617 target 0.038731
+asset    2 at weight 0.085841 target 0.096525
+asset    3 at weight 0.100254 target 0.107017
+asset    4 at weight 0.063335 target 0.063650
+asset    5 at weight 0.026318 target 0.029933
+asset    6 at weight 0.001612 target 0.003921
+asset    7 at weight 0.147274 target 0.122882
+asset    8 at weight 0.031514 target 0.033851
+asset    9 at weight 0.026070 target 0.032653
+asset   10 at weight 0.295307 target 0.284894
+asset   11 at weight 0.005236 target 0.005950
+asset   12 at weight 0.061150 target 0.065580
+asset   13 at weight 0.070953 target 0.059559
+asset   14 at weight 0.008961 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 7e+02]
+  Objective range [9e+00, 8e+02]
+  Bounds range    [2e-03, 1e+10]
+  RHS range       [2e-02, 2e+00]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+run 8: portfolio value: -62.8467
+run 8: portfolio return: -0.00152533
+Before optimization: Portfolio value: 1.13716e+10
+asset    0 at weight 0.037653 target 0.043110
+asset    1 at weight 0.039129 target 0.038731
+asset    2 at weight 0.106452 target 0.096525
+asset    3 at weight 0.111658 target 0.107017
+asset    4 at weight 0.059704 target 0.063650
+asset    5 at weight 0.024286 target 0.029933
+asset    6 at weight 0.005561 target 0.003921
+asset    7 at weight 0.113156 target 0.122882
+asset    8 at weight 0.044234 target 0.033851
+asset    9 at weight 0.024317 target 0.032653
+asset   10 at weight 0.308896 target 0.284894
+asset   11 at weight 0.002527 target 0.005950
+asset   12 at weight 0.063990 target 0.065580
+asset   13 at weight 0.051134 target 0.059559
+asset   14 at weight 0.007304 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 5e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [5e+05, 1e+10]
+  RHS range       [5e+06, 3e+08]
+Presolve time: 0.00s
+Presolved: 15 rows, 30 columns, 450 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.583518e+07   0.000000e+00      0s
+
+Solved in 32 iterations and 0.00 seconds
+Infeasible model
+After optimization:
+Portfolio value: -11.7996
+asset    0 at weight 0.043110 target 0.043110
+asset    1 at weight 0.038731 target 0.038731
+asset    2 at weight 0.096525 target 0.096525
+asset    3 at weight 0.107017 target 0.107017
+asset    4 at weight 0.063650 target 0.063650
+asset    5 at weight 0.029933 target 0.029933
+asset    6 at weight 0.003921 target 0.003921
+asset    7 at weight 0.122882 target 0.122882
+asset    8 at weight 0.033851 target 0.033851
+asset    9 at weight 0.032653 target 0.032653
+asset   10 at weight 0.284894 target 0.284894
+asset   11 at weight 0.005950 target 0.005950
+asset   12 at weight 0.065580 target 0.065580
+asset   13 at weight 0.059559 target 0.059559
+asset   14 at weight 0.011744 target 0.011744
+Before optimization: Portfolio value: -12.3392
+asset    0 at weight 0.041338 target 0.043110
+asset    1 at weight 0.037895 target 0.038731
+asset    2 at weight 0.091889 target 0.096525
+asset    3 at weight 0.101910 target 0.107017
+asset    4 at weight 0.064311 target 0.063650
+asset    5 at weight 0.029654 target 0.029933
+asset    6 at weight 0.004339 target 0.003921
+asset    7 at weight 0.127555 target 0.122882
+asset    8 at weight 0.033153 target 0.033851
+asset    9 at weight 0.033930 target 0.032653
+asset   10 at weight 0.286983 target 0.284894
+asset   11 at weight 0.008596 target 0.005950
+asset   12 at weight 0.065246 target 0.065580
+asset   13 at weight 0.062067 target 0.059559
+asset   14 at weight 0.011134 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [4e-04, 1e+10]
+  RHS range       [3e-03, 6e-02]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -12.7595
+asset    0 at weight 0.037867 target 0.043110
+asset    1 at weight 0.041464 target 0.038731
+asset    2 at weight 0.091514 target 0.096525
+asset    3 at weight 0.098203 target 0.107017
+asset    4 at weight 0.065943 target 0.063650
+asset    5 at weight 0.029991 target 0.029933
+asset    6 at weight 0.003924 target 0.003921
+asset    7 at weight 0.124768 target 0.122882
+asset    8 at weight 0.032524 target 0.033851
+asset    9 at weight 0.036548 target 0.032653
+asset   10 at weight 0.290720 target 0.284894
+asset   11 at weight 0.005802 target 0.005950
+asset   12 at weight 0.066947 target 0.065580
+asset   13 at weight 0.059381 target 0.059559
+asset   14 at weight 0.014404 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [4e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [4e-04, 1e+10]
+  RHS range       [4e-05, 1e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -12.6927
+asset    0 at weight 0.037108 target 0.043110
+asset    1 at weight 0.034516 target 0.038731
+asset    2 at weight 0.085732 target 0.096525
+asset    3 at weight 0.093615 target 0.107017
+asset    4 at weight 0.061480 target 0.063650
+asset    5 at weight 0.034429 target 0.029933
+asset    6 at weight 0.002514 target 0.003921
+asset    7 at weight 0.146318 target 0.122882
+asset    8 at weight 0.031432 target 0.033851
+asset    9 at weight 0.035780 target 0.032653
+asset   10 at weight 0.291056 target 0.284894
+asset   11 at weight 0.005713 target 0.005950
+asset   12 at weight 0.068547 target 0.065580
+asset   13 at weight 0.060994 target 0.059559
+asset   14 at weight 0.010765 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 6e+02]
+  Objective range [9e+00, 6e+02]
+  Bounds range    [4e-04, 1e+10]
+  RHS range       [3e-03, 3e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+Before optimization: Portfolio value: -13.0651
+asset    0 at weight 0.031779 target 0.043110
+asset    1 at weight 0.043044 target 0.038731
+asset    2 at weight 0.087690 target 0.096525
+asset    3 at weight 0.100418 target 0.107017
+asset    4 at weight 0.064301 target 0.063650
+asset    5 at weight 0.027304 target 0.029933
+asset    6 at weight 0.001688 target 0.003921
+asset    7 at weight 0.152817 target 0.122882
+asset    8 at weight 0.031458 target 0.033851
+asset    9 at weight 0.026729 target 0.032653
+asset   10 at weight 0.288265 target 0.284894
+asset   11 at weight 0.005062 target 0.005950
+asset   12 at weight 0.060100 target 0.065580
+asset   13 at weight 0.070686 target 0.059559
+asset   14 at weight 0.008658 target 0.011744
+Optimize a model with 15 rows, 30 columns and 450 nonzeros
+Coefficient statistics:
+  Matrix range    [3e-02, 7e+02]
+  Objective range [9e+00, 8e+02]
+  Bounds range    [4e-04, 1e+10]
+  RHS range       [9e-03, 4e-01]
+Presolve time: 0.00s
+
+Solved in 0 iterations and 0.00 seconds
+Infeasible model
+run 9: portfolio value: 1.2121e9
+run 9: portfolio return: 0.00142719
+Average value: 1.2335e9
+Average return: 0.00152467
