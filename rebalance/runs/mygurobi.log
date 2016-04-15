@@ -1,0 +1,25 @@
+Solving rebalance.lp
+variables = 20
+constraints = 10
+Optimal objective = 8553.53
+9 nonzero variables in solution
+d4plus = 71.4965357968
+d5plus = 22.628959276
+d7plus = 19.2623762376
+d8plus = 10.3353242321
+d9plus = 352.148514851
+d1minus = 88.685520362
+d2minus = 4.53249630724
+d3minus = 16.9561270802
+d6minus = 106.98649865
+1a_0 = -2.0
+1a_1 = -2.0
+1a_2 = -2.0
+1a_3 = -2.0
+1a_4 = 2.77555756156e-16
+1a_5 = 5.55111512313e-17
+1a_6 = -2.0
+1a_7 = 5.55111512313e-17
+1a_8 = 1.11022302463e-16
+1a_9 = 0.0
+bye.
