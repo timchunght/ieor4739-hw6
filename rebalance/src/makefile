@@ -6,8 +6,15 @@ gccopt= gcc -O2 -funroll-loops
 gccdeb= gcc -ggdb -Wall -pedantic
 CCC = $(gccdeb)
 
+OS := $(shell uname)
+ifeq ($(OS),Darwin)
+  # Run MacOS commands
+  GRB = /Library/gurobi651/mac64
+else
+	GRB = /opt/gurobi/gurobi650/linux64
+  # check for Linux and run other commands
+endif
 
-GRB = /opt/gurobi/gurobi650/linux64
 
 #include
 LPINCDIR = $(GRB)/include
