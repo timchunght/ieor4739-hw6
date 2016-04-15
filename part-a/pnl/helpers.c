@@ -62,7 +62,7 @@ int import_positions(char* filename, double **px, int* num_of_asset, int** indic
   *indices_pointer = indices;
   *num_of_asset = non_size_asset_count;
   *px = x;
-  free(x);
+ 
   return 0;
 }
 
@@ -121,7 +121,7 @@ int import_prices(char* filename, double **prices_pointer, int n, int *indices, 
   *time_pointer = t;
 
   *prices_pointer = p;
-  free(p);
+ 
   return 0;
 }
 
@@ -153,7 +153,7 @@ int calculate_average_deltas(double *prices, int num_of_assets, int t, double **
   }
 
   *delta_pointer = deltas;
-  // free(deltas);
+
   return 0;
 }
 
@@ -175,7 +175,7 @@ int calculate_sigmas(double *prices, int num_of_assets, int t, double *deltas, d
   }
 
   *sigmas_pointer = sigmas;
-  free(sigmas);
+
   return 0;
 }
 
@@ -187,5 +187,5 @@ void calculate_quantities(int num_of_assets, int t, double budget, double *posit
   }
 
   *quantities_pointer = quantities;
-  free(quantities);
+ 
 }

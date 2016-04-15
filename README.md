@@ -11,7 +11,7 @@ Arbitrary: 1, 0.2, 0.4
 (b) Compute a portfolio using robust portfolio optimization (you can use Now run the P&L simulation using rebalancing every three months -- any gains or costs are reinvested into the portfolio so as to keep the same "x" positions, as explained in class. You need to output the average (over the simulations) of the mean daily portfolio return and daily variance of return. 
 
 Add rebalancing every 90 days
-
+Add code to update the weight
 
 #### Instructions:
 
