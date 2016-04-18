@@ -1,4 +1,5 @@
 IEOR 4739 -- HW5: better rebalancing
+UNI: tec2123
 
 In this homework set you will extend the P& L computation in HW4 as follows:
 
@@ -11,6 +12,7 @@ Create new input for pnl using rob
 Inside ``part-a/src``, run
 
 ```
+make rob
 ../bin/rob input.txt 10.0 0.2 0.5
 ```
 
@@ -18,26 +20,33 @@ This will generate a ``positions.txt`` file in your local directory compatible w
 
 (b) Compute a portfolio using robust portfolio optimization (you can use Now run the P&L simulation using rebalancing every three months -- any gains or costs are reinvested into the portfolio so as to keep the same "x" positions, as explained in class. You need to output the average (over the simulations) of the mean daily portfolio return and daily variance of return. 
 
-Add rebalancing every 90 days
-Add code to update the weight
+### Changelog
+Added rebalancing every 90 days
+Added code to update the weight by modifying the default rebalancing code
 
-#### Instructions:
+In side ``part-b/src``, run
 
 ```
-cd part-a/pnl
 make
 ./pnl
 ```
+or if you want to output the stdout to a file, run:
 
-It will run 1 million simulations and print out each of the run id, portfolio value, and porfolio return. Lastly, it will calculate the avg_value and avg_return.
+```
+./pnl >> outputs.txt
+```
+An ``outputs.txt`` is committed with this repo as well.
 
-#### Output:
+Notice: I should have made the input files dynamically set by command line args
+
 
 ```
 <!-- lines omitted -->
-run 999998: portfolio return: 0.000457346
-run 999999: portfolio value: 1.24834e+10
-run 999999: portfolio return: 0.000449826
-Average value: 1.25358e+10
-Average return: 0.000465522
+Solved with dual simplex
+Solved in 693 iterations and 2.23 seconds
+Infeasible model
+run 9: portfolio value: 1.06606e+10
+run 9: portfolio return: 0.000723253
+Average value: 7.50714e+09
+Average return: -0.00219775
 ```

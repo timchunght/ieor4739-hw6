@@ -11,6 +11,8 @@
 int main(int argc, char *argv[])
 { 
 
+  // the paths are temporarily hard coded for easy testing, 
+  // I will change them to be command line args later
   int num_of_assets;
   char *positions_filename = "./positions.txt";
   char *prices_filename = "./prices.txt";
@@ -18,7 +20,7 @@ int main(int argc, char *argv[])
   double *x = NULL;
   int *indices = NULL;
   int t;
-  int max_period = 10000;
+  int max_period = 100; 
   int runs_count = 10;
   double *prices = NULL;
   double budget = 1e10;
@@ -78,7 +80,7 @@ int main(int argc, char *argv[])
       quantities[i] = quantities_clone[i];
     }
 
-
+    printf("Simulation # %d\n", z);
     code = run_simulation(z, num_of_assets, t, prices, quantities, deltas, sigmas, &portfo_values, &portfo_returns, current_prices, x);
   }
 
@@ -90,6 +92,8 @@ int main(int argc, char *argv[])
 
   free(portfo_values);
   free(portfo_returns);
+
+  return 0;
 }
 
 int run_simulation(int run_idx, int num_of_assets, int t, double *prices, double *quantities, double *deltas, double *sigmas, double **portfo_values, double **portfo_returns, double *current_prices, double *initial_positions) {
