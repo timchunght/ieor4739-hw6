@@ -282,14 +282,22 @@ int robustengine(int numassets, int numfactors,
 
   /** now let's see the values **/
 
+    
+  FILE *file = fopen("positions.txt", "w");
+ 
+  fprintf(file, "n %d\n", numassets);
+  
   expectedreturnval = 0;
   for(j = 0; j < numassets; j++){
     if( x[j] > 1.0e-09){
       printf("%s = %g\n", names[j], x[j]);
+      // writing to output
+      fprintf(file, "%g\n", x[j]);
       expectedreturnval += x[j]*mu[j];
     }
   }
 
+  fclose(file);
   printf("\n*** expected portfolio return: %g; robust: %g\n", expectedreturnval, x[numassets + numfactors]);
 
   GRBfreemodel(model);
