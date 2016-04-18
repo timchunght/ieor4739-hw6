@@ -37,7 +37,7 @@ or if you want to output the stdout to a file, run:
 ```
 An ``outputs.txt`` is committed with this repo as well.
 
-Notice: I should have made the input files dynamically set by command line args
+* Notice: I should have made the ``runs_count``, ``filename`` and ``input file paths`` dynamically set by command line args
 
 
 ```
