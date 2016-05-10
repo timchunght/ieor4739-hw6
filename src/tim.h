@@ -7,5 +7,7 @@
 #include <string.h> 
 
 int sample(int input);
+void calculate_deterministic_probabilities(double* probabilities, int asset_count);
+
 
 #endif
