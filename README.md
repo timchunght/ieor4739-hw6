@@ -1,4 +1,4 @@
-IEOR 4739 -- HW5: better rebalancing
+IEOR 4739 -- HW6: Trading Impact Model (tim)
 UNI: tec2123
 
 In this homework set you will extend the P& L computation in HW4 as follows:

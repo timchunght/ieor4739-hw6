@@ -1,7 +1,4 @@
-rebalance
-pnl
 *.o
 *.log
 *.lp
-rob
-factor
+tim
