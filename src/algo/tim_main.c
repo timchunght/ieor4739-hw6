@@ -8,7 +8,7 @@ int main(int argc, char **argv)
 {
   
   printf("hello, tim");
-  sample();
+  caller();
   return 0;
 }
 

@@ -15,6 +15,16 @@ int sample()
 
 }
 
+int caller()
+{
+  
+  sample();
+
+  return 0;
+
+}
+
+// this function alters the probabilities  array ([double]) passed in
 void calculate_deterministic_probabilities(double* probabilities, int asset_count) {
 
 	for (int k = 0; k <= asset_count; k++) {
@@ -24,6 +34,17 @@ void calculate_deterministic_probabilities(double* probabilities, int asset_coun
 
 		}
 		probabilities[(k)*(asset_count+1) + (k)] = 1.0;
+	}
+
+	return;
+}
+
+// this function alters the d array ([double]) passed in
+void calculate_alpha_log_priceshifts(double* d, int shares_count, double alpha) {
+
+
+	for (int n = 0; n <= shares_count; n++) {
+		d[n] = 1.0 - alpha*log(1.0 + (double)n);
 	}
 
 	return;

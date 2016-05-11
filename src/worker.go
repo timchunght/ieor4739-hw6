@@ -10,7 +10,7 @@ import "C"
 // import "fmt"
 
 func main() {
-	_ = C.sample()
+	_ = C.caller()
 	// fmt.Println(int(C.bridge_int_func(f)))
 	// Output: 42
 }

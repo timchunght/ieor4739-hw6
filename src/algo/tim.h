@@ -6,8 +6,9 @@
 #include <stdlib.h>
 #include <string.h> 
 
-extern int sample();
+int sample();
+extern int caller();
 void calculate_deterministic_probabilities(double* probabilities, int asset_count);
-
+void calculate_alpha_log_priceshifts(double* d, int shares_count, double alpha);
 
 #endif
