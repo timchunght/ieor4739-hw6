@@ -1,27 +1,12 @@
-# ---------------------------------------------------------------------
-# Link options and libraries
-# ---------------------------------------------------------------------
-
-gccopt= gcc -O2 -funroll-loops
-gccdeb= gcc -ggdb -Wall -pedantic
-CCC = $(gccdeb)
-
-#link
-LIBS= -lm -lpthread 
-CCCLNFLAGS = $(LIBS)
-
-../bin/%.o: %.c
-	@echo compiling $*.c with $(CCC) $(CCCFLAGS)
-	@$(CCC) $(CCCFLAGS) -c $< -o $@
-
-TIM = ../bin/tim_main.o ../bin/tim.o
-
-tim: $(TIM)
-	$(CCC) $(CCCFLAGS) -o ../bin/tim $(TIM) $(CCCLNFLAGS)
+all:
+	gofmt -e -s -w .
+	go vet .
+	$(CC) -g -fPIC -c -o algo/tim.o algo/tim.c
+	$(CC) -g -fPIC -shared -o libtim.so algo/tim.o
+	LD_LIBRARY_PATH=. go build -o worker
 
 clean:
-	rm ../bin/*
-
-sweep:
-	rm *~
-	rm *#
+	rm -rf bin/*
+	rm *.so
+	rm algo/*.o
+	rm worker

@@ -1,15 +1,15 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h> 
+#include <math.h>
 #include "tim.h" 
 
 
 
-int sample(int input)
+int sample()
 {
   
-  printf("input %d\n", input);
+  printf("input %d\n", 123);
 
   return 0;
 

@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <string.h> 
 
-int sample(int input);
+extern int sample();
 void calculate_deterministic_probabilities(double* probabilities, int asset_count);
 
 
