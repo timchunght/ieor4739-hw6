@@ -8,7 +8,7 @@
 
 int sample();
 extern int caller();
-void calculate_deterministic_probabilities(double* probabilities, int asset_count);
+void calculate_deterministic_probabilities(double* probabilities, int shares_count);
 void calculate_alpha_log_priceshifts(double* d, int shares_count, double alpha);
-
+int tim_resources_allocate(int N, int T, double alpha);
 #endif
