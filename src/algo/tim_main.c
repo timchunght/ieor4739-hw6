@@ -7,8 +7,12 @@
 int main(int argc, char **argv)
 {
   
-  printf("hello, tim");
-  caller();
+  printf("hello, tim\n");
+  // caller();
+  int N = 1000;
+  int T = 10;
+  double alpha = 0.001;
+  tim_resources_allocate(N, T, alpha); 
   return 0;
 }
 

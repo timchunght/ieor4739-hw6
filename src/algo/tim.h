@@ -13,8 +13,9 @@
 int sample();
 extern int caller();
 void calculate_deterministic_probabilities(double* probabilities, int shares_count);
+void calculate_squareinv_probabilities(double* probabilities, int shares_count);
 void calculate_alpha_log_priceshifts(double* d, int shares_count, double alpha);
 int tim_resources_allocate(int N, int T, double alpha);
-int tim_optimize(int N, int T, double *probabilities, double *optimal, double *path, double *d);
-
+int tim_optimize(int N, int T, double *probabilities, double *optimal, int *path, double *d);
+double tim_calculate_deterministic_profit(int N, int T, double *probabilities, double *optimal, int *path, double *d);
 #endif
