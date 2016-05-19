@@ -82,7 +82,7 @@ void calculate_alpha_log_priceshifts(double* d, int shares_count, double alpha) 
 
 
 
-int tim_resources_allocate(int N, int T, double alpha) {
+int tim_orchestrator(int N, int T, double alpha, char* model_type) {
 
 	printf("shares_count: %d, T (periods): %d\n", N, T);
 
@@ -93,13 +93,24 @@ int tim_resources_allocate(int N, int T, double alpha) {
 	
 
 	// execute alpha_log priceshifts func
+	printf("Performing alpha log priceshifts\n");
 	calculate_alpha_log_priceshifts(d, N, alpha);
 
 	// selectively execute one of the probabilities func based on arg
-	// calculate_deterministic_probabilities(probabilities, N);
-	calculate_squareinv_probabilities(probabilities, N);
-	
+  if(strcmp(model_type, "squareinv") == 0) {
+  	printf("Executing squareinv probabilities model\n");
+  	calculate_squareinv_probabilities(probabilities, N);
+
+  } else if(strcmp(model_type, "deterministic") == 0){
+  	printf("Executing deterministic probabilities model\n");
+  	calculate_deterministic_probabilities(probabilities, N);
+  } else {
+  	printf("Not enough argument: missing model_type");
+  	return 1;
+  }
+ 	printf("Optimizing...\n");
 	tim_optimize(N, T, probabilities, optimal, path, d);
+	printf("Calculating profits...\n");
 	tim_calculate_deterministic_profit(N, T, probabilities, optimal, path, d);
 	return 0;
 }

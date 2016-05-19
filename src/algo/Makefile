@@ -14,7 +14,7 @@ CCCLNFLAGS = $(LIBS)
 	@echo compiling $*.c with $(CCC) $(CCCFLAGS)
 	@$(CCC) $(CCCFLAGS) -c $< -o $@
 
-TIM = ../bin/tim_main.o ../bin/tim.o
+TIM = ../bin/tim_tester.o ../bin/tim.o
 
 tim: $(TIM)
 	$(CCC) $(CCCFLAGS) -o ../bin/tim $(TIM) $(CCCLNFLAGS)

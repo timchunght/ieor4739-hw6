@@ -12,7 +12,8 @@ int main(int argc, char **argv)
   int N = 1000;
   int T = 10;
   double alpha = 0.001;
-  tim_resources_allocate(N, T, alpha); 
+
+  tim_orchestrator(N, T, alpha, "deterministic"); 
   return 0;
 }
 
