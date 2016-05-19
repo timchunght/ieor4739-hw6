@@ -1,16 +1,18 @@
 package main
 
-/*
-#include "algo/tim.h"
-#include <stdlib.h>       // for free()
-#cgo LDFLAGS: -L. -ltim
-*/
-import "C"
-
-// import "fmt"
+import (
+	"C"
+	goworkers "github.com/Scalingo/go-workers"
+	"ieor-hw6/src/workers"
+)
 
 func main() {
-	_ = C.caller()
-	// fmt.Println(int(C.bridge_int_func(f)))
-	// Output: 42
+	workers.Tester()
+	goworkers.Configure(map[string]string{
+		"process": "worker1",
+		"server":  "localhost:6379",
+	})
+
+	goworkers.Process("tim_worker", workers.TimWorker, 10)
+	goworkers.Run()
 }
