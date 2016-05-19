@@ -2,7 +2,7 @@ package workers
 
 /*
 #include "../algo/tim.h"
-#cgo LDFLAGS: -L. -ltim
+#cgo LDFLAGS: -L. -ltim -lm
 */
 import "C"
 
