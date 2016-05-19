@@ -10,6 +10,7 @@ make #this will create client and worker binary in the root directory of folder
 ### Run worker
 ```
 redis-server # start queueing server
+export LD_LIBRARY_PATH=. 
 ./worker # start worker
 
 ```
