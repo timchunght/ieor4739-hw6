@@ -4,6 +4,7 @@ UNI: tec2123
 
 ### Setup (You need Go, Redis(TCP and Queue), and gcc)
 ```
+go get "github.com/jrallison/go-workers"
 make #this will create client and worker binary in the root directory of folder
 ```
 ### Run worker
