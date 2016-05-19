@@ -9,5 +9,6 @@ all:
 clean:
 	rm -rf bin/*
 	rm *.so
+	rm -rf workers/*.so
 	rm algo/*.o
 	rm worker
