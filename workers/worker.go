@@ -10,7 +10,8 @@ import goworkers "github.com/Scalingo/go-workers"
 
 func TimWorker(msg *goworkers.Msg) {
 
-	_ = C.caller()
+	fmt.Println(msg[0])
+	// _ = C.caller()
 
 	// printf("hello, tim\n");
 	// caller();
@@ -20,7 +21,8 @@ func TimWorker(msg *goworkers.Msg) {
 	N := 1000
 	T := 10
 	alpha := 0.001
-	C.tim_orchestrator(C.int(N), C.int(T), C.double(alpha), C.CString("deterministic"))
+	modelType := "deterministic"
+	C.tim_orchestrator(C.int(N), C.int(T), C.double(alpha), C.CString(modelType))
 
 }
 
