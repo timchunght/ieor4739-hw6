@@ -12,6 +12,16 @@ func TimWorker(msg *goworkers.Msg) {
 
 	_ = C.caller()
 
+	// printf("hello, tim\n");
+	// caller();
+	// int N = 1000;
+	// int T = 10;
+	// double alpha = 0.001;
+	N := 1000
+	T := 10
+	alpha := 0.001
+	C.tim_orchestrator(C.int(N), C.int(T), C.double(alpha), C.CString("deterministic"))
+
 }
 
 func Tester() {
