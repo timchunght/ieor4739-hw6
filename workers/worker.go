@@ -36,11 +36,11 @@ func TimWorker(msg *goworkers.Msg) {
 		// int N = 1000;
 		// int T = 10;
 		// double alpha = 0.001;
-		N := 1000
-		T := 10
-		alpha := 0.001
-		modelType := "deterministic"
-		C.tim_orchestrator(C.int(N), C.int(T), C.double(alpha), C.CString(modelType))
+		// N := 1000
+		// T := 10
+		// alpha := 0.001
+		// modelType := "deterministic"
+		C.tim_orchestrator(C.int(m.Shares), C.int(m.Periods), C.double(m.Alpha), C.CString(m.Model))
 	}
 
 }

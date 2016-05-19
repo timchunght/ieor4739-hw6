@@ -1,8 +1,10 @@
 package main
 
-import "flag"
-import "fmt"
-import "github.com/Scalingo/go-workers"
+import (
+	"flag"
+
+	"github.com/Scalingo/go-workers"
+)
 
 type Message struct {
 	Shares  int
@@ -20,16 +22,11 @@ func main() {
 
 	flag.Parse()
 
-	fmt.Println(*sharesPtr)
-	fmt.Println(*periodsPtr)
-	fmt.Println(*modelPtr)
-	fmt.Println(*alphaPtr)
-
 	workers.Configure(map[string]string{
 		"process": "client1",
 		"server":  "localhost:6379",
 	})
-	m := []interface{}{Message{Shares: 1000, Periods: 10, Alpha: 0.005, Model: "deterministic"}}
+	m := []interface{}{Message{Shares: *sharesPtr, Periods: *periodsPtr, Alpha: *alphaPtr, Model: *modelPtr}}
 	workers.Enqueue("tim_worker", "TimWorker", m)
 
 }
