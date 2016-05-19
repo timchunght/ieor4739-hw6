@@ -3,7 +3,7 @@ package main
 import (
 	"C"
 	goworkers "github.com/Scalingo/go-workers"
-	"ieor-hw6/src/workers"
+	"ieor-hw6/workers"
 )
 
 func main() {
