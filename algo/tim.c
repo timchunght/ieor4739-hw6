@@ -84,7 +84,7 @@ void calculate_alpha_log_priceshifts(double* d, int shares_count, double alpha) 
 
 int tim_orchestrator(int N, int T, double alpha, char* model_type) {
 
-	printf("shares_count: %d, T (periods): %d\n", N, T);
+	printf("shares_count: %d, T (periods): %d, Alpha: %g\n", N, T, alpha);
 
 	double *probabilities = (double*)calloc((N+1)*(N+1), sizeof(double));
 	double *optimal = (double*)calloc(T*(N+1), sizeof(double));
